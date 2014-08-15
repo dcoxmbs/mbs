@@ -9,22 +9,21 @@
     <meta name="author" content="">
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-
     <!-- TemplateBeginEditable name="doctitle" -->
-    <title>Untitled Document</title>
+    <title>MBS Akron</title>
     <!-- TemplateEndEditable -->
-
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-
-<!-- TemplateBeginEditable name="custom CSS" -->
-    <!-- Add custom CSS here -->
+    <!-- Add custom CSS here --> <!-- TemplateBeginEditable name="head" -->
+    
     <link href="/css/modern-business.css" rel="stylesheet">
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/yamm.css" rel="stylesheet">
     <script src="/js/respond.min.js"></script>
-    
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="/js/jquery.plugin.js"></script>
+    <script src="/js/jquery.countdown.js"></script>
+<!-- TemplateEndEditable -->
     <style>
     #myNav.affix {
         top: 0px;
@@ -42,14 +41,70 @@
         position: absolute;
         top: 50px !important;
     }
+	
+	.Absolute-Center {
+  width: 75%;
+  
+  
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.Center-Container {
+  position: relative;
+}
+
+h3  {
+font-size: 42px !important;
+}
+ h3 {
+margin-top: 20px !important;
+margin-bottom: 10px !important;
+}
+
+ .cad {
+margin-top: 0px !important;
+padding-top:0px;
+margin-bottom: 10px !important;
+}
+ h3   {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important	;
+font-weight: 700 !important;
+line-height: 1.1 !important;
+color: black !important;
+}
+
+#getting-started{
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    border: 3px solid #cccccc;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+	font-size:24px !important;
+	font-weight:700;
+}
+#getting-started span{
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+
+    background-color: #333333;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 5px;
+}
     </style>
-<!-- TemplateEndEditable -->
-
-
-<!-- TemplateBeginEditable name="head" -->
-
-
-<!-- TemplateEndEditable -->
+   
 </head>
 <!--   #########################################
        ###                                   ###
@@ -247,11 +302,11 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogs <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="catalogs/product-flyer.html">Product Flyers</a>
+                                <li><a href="../branches/oh/catalogs/product-flyer.html">Product Flyers</a>
                                 </li>
-                                <li><a href="catalogs/tool-flyer.html">Tool Flyers</a>
+                                <li><a href="../branches/oh/catalogs/tool-flyer.html">Tool Flyers</a>
                                 </li>
-                                <li><a href="blog-post.html">Blog Post</a>
+                                <li><a href="../branches/oh/blog-post.html">Blog Post</a>
                                 </li>
                             </ul>
                         </li>
@@ -283,64 +338,46 @@
 <!--         ######################################################################
              ####                                                              ####
              ####          BRANCH INFORMATION                                  ####
-             ######################################################################   -->
+             ######################################################################   --><!-- TemplateBeginEditable name="bodycopy1" -->
              
+      
       <div class="section">
        <div class="container">
+<div class="row">
 
+        <div class="col-lg-12">
+          <h1 class="page-header">MBS Akron</h1>
+            <ol class="breadcrumb">
+                <li><a href="/index.html">Home</a>
+                </li>
+                <li class="active">MBS Akron</li>
+            </ol>
+      </div>
 
-            <!-- TemplateBeginEditable name="breadcrumb" -->
-            <div class="row">
+      </div>
+		 <div class="row">
 
-                <div class="col-lg-12">
-                  <h1 class="page-header">MBS Akron</h1>
-                    <ol class="breadcrumb">
-                        <li><a href="/index.html">Home</a>
-                        </li>
-                        <li class="active">MBS Akron</li>
-                    </ol>
-              </div>
+               <div class="col-md-6 pull-left">
 
-         </div>
-		 <!-- TemplateEndEditable -->
-		 
-		 <!-- TemplateBeginEditable name="Branch info" -->
-
-            <div class="row">
-
-                <div class="col-md-6 pull-left">
-                    <img class="img-responsive img-branch" src="/images/branch/akron.jpg">
+                <img class="img-responsive img-branch" src="/images/branch/akron.jpg">
                 </div>
-
                 <div class="col-md-6 pull-right">
-                    <h4>MBS Akron Branch</h4>
-                    <p>What sets
-                        <strong>Modern Builders Supply</strong> apart from our competition? Simple, it’s our people. The Team at
-                        <strong>MBS Akron</strong> has on average, an excess of 22 years of industry knowledge in the sales and installation of Roofing, Siding, Windows & Doors as well as Kitchen and Bath cabinetry. And we have our finger tips on the pulse of what's new and trendy today. Stop in today and let our friendly, knowledgeable staff show you why
-                        <strong>MBS Akron</strong>is
-                        <em>the</em> place for professional contractors to shop.</p>
+                  <h4>MBS Akron Branch</h4>
+                    <p>What sets <strong>Modern Builders Supply</strong> apart from our competition? Simple, it’s our people. The Team at <strong>MBS Akron </strong>has on average, an excess of 22 years of industry knowledge in the sales and installation of Roofing, Siding, Windows & Doors as well as Kitchen and Bath cabinetry. And we have our finger tips on the pulse of what's new and trendy today. Stop in today and let our friendly, knowledgeable staff show you why <strong>MBS Akron </strong>is <em>the</em> place for professional contractors to shop.</p>
 
                     <!----                                 WELL          -->
                     <div class="well" style="padding-top:5px; padding-bottom:5px; background-color: #fffff0;">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td width="42%" valign="top">
-                                    <address>
-                                    
-                                        <strong>MBS Akron</strong>
-                                        <br/>809 E. Exchange Street
-                                        <br/>Akron, OH 44306
-                                        <br/>
-                                        <br/>
-                                        <i class="fa fa-phone"></i> (330) 376-1031
-                                        <br>
-                                        <i class="fa fa-phone"> </i> (800) 783-1031
-                                        <br>
-                                        <i class="fa fa-phone"></i> Fax: (330) 376-5053
-                                        <br>
-                                        <br>
-
-                                </address></td>
+                                <td width="42%" valign="top"><p><strong>MBS Akron</strong> <br>
+                                  3808 East 5th Avenue<br>
+                                  Akron, OH 43219<br>
+  <br>
+  <i class="fa fa-phone"></i> (614) 237-3705<br>
+  <i class="fa fa-phone"></i> (800) 783-3705<br>
+  <i class="fa fa-phone"></i> Fax: (614) 237-3972<br>
+  <br>
+                                </p></td>
                                 <td width="5%">&nbsp;</td>
                                 <td width="48%" valign="top"><i class="fa fa-clock-o"></i>
                                     <strong>Store Hours:</strong>
@@ -352,7 +389,7 @@
                                     <strong>Sunday:</strong>Closed
                                     <br/>
                                     <br/>
-                                    <i class="fa fa-envelope-o"></i><a href="mailto:MBS-Akron@modernbuilderssupply.com">   Email Us</a>
+                                    <i class="fa fa-envelope-o"></i><a href="mailto:MBS-Columbus@modernbuilderssupply.com">   Email Us</a>
                                 </td>
                                 <br>
                             </tr>
@@ -362,68 +399,72 @@
                 </div>
 
             </div>
-			<!-- TemplateEndEditable -->
-        </div>
+            
+			</div>
 
-    </div>
-      <!-- TemplateBeginEditable name="body content 1" -->
-	<div class="section">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h2 class="page-header">Branch News and Events</h2>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-                </a>
-            </div>
-
-        </div>
-        <!--/.row-->
-      
-    </div>
-   
-</div>
+    </div><!-- TemplateEndEditable -->
+    
+    
+<!-- TemplateBeginEditable name="newsevents" -->
+    
+    
 <div class="section">
+  <div class="container">
+    <div class="col-lg-12">
+               <h2 class="page-header">Branch News and Events</h2>
+          </div>
+      <div class="row">
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+              </a>
+          </div>
+</div>
+        
+      <!--/.row-->
+         
+            
+
+      </div>
+        
+      <div class="section">
         <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Other News and Events</h2>
             </div>
             </div>
-           </div>
-           </div>
-
+         </div>
+         </div>
+  </div>
+  <br/><!-- TemplateEndEditable -->
+  
+  <!-- TemplateBeginEditable name="tabs" -->
+  
 	  
-	  <!-- TemplateEndEditable -->
-      
-    
-    <div class="section">
-        <div class="container">
+<div class="section">
+    <div class="container">
             <div class="row">
-                <div class="col-lg-12"><!-- TemplateBeginEditable name="tabs-1" -->
-                    <p class="lead">Find Out More About MBS Akron Below:</p><!-- TemplateEndEditable -->
+                <div class="col-lg-12">
+<p class="lead">Find Out More About MBS Akron Below:</p>
                     <div id="tab" class="btn-group btn-group-justified well" data-toggle="buttons-radio">
                         <a href="#map2" class="btn btn-lg btn-default active " data-toggle="tab">Map & Directions</a>
                         <a href="#features2" class="btn btn-lg btn-default " data-toggle="tab">Featured Products</a>
@@ -432,35 +473,29 @@
                     </div>
 
                     <div class="tab-content">
-					<!-- TemplateBeginEditable name="tab-map" -->
-                    
-                        <div class="tab-pane active fade in" id="map2">
-                            <br>
-                            <div class="page-header">
-                                <h2>Find MBS Akron On the Map
-                                    <br/>
-                                    <small>Zoom into Street level or click the Directions link for turn-by-turn directions.</small>
-                                </h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-12">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48143.06088222037!2d-81.48036306233747!3d41.048412631331985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883129c0bc988305%3A0x366e09350c3eacc2!2sModern+Builders+Supply%2C+Inc.+Akron+Branch!5e0!3m2!1sen!2sus!4v1395424720595" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-                                </div>
-                                <br/>
-                                <div class="row">
-                                    <div class="col-sm-12 col-xs-12">
-                                        <p>something</p>
-                                    </div>
-                                </div>
-
-
-                            </div>
+<div class="tab-pane active fade in" id="map2">
+              <br>
+              <div class="page-header">
+                  <h2>Find MBS Akron On the Map
+                      <br/>
+                      <small>Zoom into Street level or click the Directions link for turn-by-turn directions.</small>
+                  </h2>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 col-xs-12">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48143.06088222037!2d-81.48036306233747!3d41.048412631331985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883129c0bc988305%3A0x366e09350c3eacc2!2sModern+Builders+Supply%2C+Inc.+Akron+Branch!5e0!3m2!1sen!2sus!4v1395424720595" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+                  </div>
+                  <br/>
+                  <div class="row">
+                      <div class="col-sm-12 col-xs-12">
+                          <p>something</p>
                       </div>
-					  <!-- TemplateEndEditable -->
-					  <!-- TemplateBeginEditable name="tabs-features" -->
-                      
+                  </div>
 
-                        <div class="tab-pane fade" id="features2">
+
+              </div>
+            </div>
+					  <div class="tab-pane fade" id="features2">
                             <br>
                             <p class="lead">Features content</p>
                             <div class="row">
@@ -475,10 +510,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TemplateEndEditable -->
-					  <!-- TemplateBeginEditable name="tabs-weather" -->
-                        
-
                         <div class="tab-pane fade" id="weather2">
                             <br>
                             <p class="lead">Requests content</p>
@@ -494,11 +525,7 @@
                                 </div>
                             </div>
                         </div>
-                      <!-- TemplateEndEditable -->
-					  <!-- TemplateBeginEditable name="tabs-closeouts" -->
-                        
-
-                        <div class="tab-pane fade" id="closeout2">
+                      <div class="tab-pane fade" id="closeout2">
 
                             <div class="page-header">
                                 <h1>MBS Akron Closeout Specials
@@ -680,9 +707,9 @@
                             </div>
 
                         </div>
+                     
                         <!--end closeouts -->
-                        <!-- TemplateEndEditable -->
-                  </div>
+                        </div>
 
 
 
@@ -690,7 +717,7 @@
             </div>
         </div>
 
-    </div>
+    </div><!-- TemplateEndEditable -->
     
      <div class="section-footer">
     <div class="container">
