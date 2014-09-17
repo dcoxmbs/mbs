@@ -64,23 +64,45 @@ margin-top: 60px;
   border: 1px solid #cccccc;
 }
 
-/* Half Page Height Carousel Customization */
-.carousel {
-  height: 50%;
+/* Home Page Carousel */
 
-}
-.item,
-.active,
-.carousel-inner {
-  height: 100%;
+header.carousel {
+    height: 50%;
 }
 
-.fill {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
 }
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+	background-size: ;
+    
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
 
 
 /* Social Icons Styles */
@@ -116,23 +138,10 @@ margin-top: 60px;
 
 /* 404 Page Styles */
 .error-404 {
-  font-size: 8em;
+  font-size: 100%;
 }
 
-/* Pricing Page Styles */
-.price {
-  font-size: 4em;
-}
 
-.price-cents {
-  vertical-align: super;
-  font-size: 50%;
-}
-
-.price-month {
-  font-size: 35%;
-  font-style: italic;
-}
 
 /* Footer Styles */
 footer {
@@ -142,9 +151,7 @@ footer {
 /* Responsive Styles */
 @media (max-width: 767px) {
 
-.carousel {
-  height: 70%; /* increases the carousel height so it looks good on phones */
-}
+
 
 .affix-nav {
   position: fixed;
@@ -409,6 +416,11 @@ a:hover {
 	
 }
 
+.carousel-control:hover, .carousel-control:focus{
+	background:#fff !important;
+	background-color: transparent !important;
+}
+
 a:hover img{
     color: white;
     background: none;
@@ -423,6 +435,7 @@ a:hover img{
 
 li.dropdown a {
 	word-wrap:normal !important;
+	
 	}
 
 /*********************************************
@@ -550,5 +563,11 @@ box-shadow: 0px 0px 9px #000000;
  .cta-action a {
 	 color:white;
  }
-
+.section:nth-child(odd) {
+		 background-color:  #ffffff;
+		}
+			
+	.section:nth-child(even) {
+		 background-color:  #ededed;
+		}
 overflow-x:hidden

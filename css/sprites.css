@@ -1,0 +1,40 @@
+.Twitter, .Facebook, .Google+, .Houzz, .LinkedIn, .Pinterest{
+	background: url(sprites.png) no-repeat;
+}
+
+.Twitter{
+	background-position: -70px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.Facebook{
+	background-position: 0 0;
+	width: 60px;
+	height: 60px;
+}
+
+.Google+{
+	background-position: -280px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.Houzz{
+	background-position: -350px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.LinkedIn{
+	background-position: -210px 0;
+	width: 60px;
+	height: 60px;
+}
+
+.Pinterest{
+	background-position: -140px 0;
+	width: 60px;
+	height: 60px;
+}
+

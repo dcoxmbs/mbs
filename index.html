@@ -11,10 +11,12 @@
     <title>Modern Builders Supply</title>
 
 
-
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-<script src="/js/html5shiv.js"></script>
-<![endif]-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script src="/js/html5shiv.js"></script>
 
     <!-- Bootstrap core CSS -->
@@ -24,6 +26,7 @@
     <link href="/css/modern-business.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/yamm.css" rel="stylesheet">
+    <link href="/css/sprites.css" rel="stylesheet">
 
     <style>
     #myNav.affix {
@@ -87,7 +90,7 @@
             <div class="row ">
                 <div class=" col-md-4  col-sm-12 col-xs-10 ">
 
-                    <img class="img-responsive" src="/images/bg/MBS-bullet.png" alt="MBS"  />
+                  <div class="Facebook"></div>>
 
                 </div>
 
@@ -128,12 +131,12 @@
                         <ul role="menu" class="dropdown-menu">
                             <li><a tabindex="-1" href="/about/about.html">Family of Companies</a>
                             </li>
-                            <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
+                           <!-- <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
                             </li>
                             <li><a tabindex="-1" href="/about/timeline.html">MBS Timeline</a>
                             </li>
                             <li><a tabindex="-1" href="/about/culture.html">MBS Culture</a>
-                            </li>
+                            </li>-->
                         </ul>
 
                         <li class="dropdown "><a href="#" data-toggle="dropdown" class="dropdown-toggle">Branches<b class="caret"></b></a>
@@ -267,29 +270,17 @@
                         </li>
                         <li class="dropdown">
                         	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>                            <ul role="menu" class="dropdown-menu">
-                            	<li><a tabindex="-1" href="/services/fleet.html">Our Fleet</a>
-                                </li>
-                                <li><a tabindex="-1" href="/services/expresss-pick-up.html">Express Pickup </a>
+                            	<!--<li><a tabindex="-1" href="/services/fleet.html">Our Fleet</a>
+                                </li>-->
+                                <li><a tabindex="-1" href="/services/express-pick-up.html">Express Pickup </a>
                                 </li>
                                 <li><a tabindex="-1" href="/services/ready-2-roof.html">Ready-2-Roof</a>
                                 </li>
                               </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a tabindex="-1" href="portfolio-1-col.html">1 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="portfolio-2-col.html">2 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="portfolio-3-col.html">3 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="portfolio-4-col.html">4 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="portfolio-item.html">Single Portfolio Item</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li >
+                            <a href="/products/solutions.html" >Products </a>
+                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <b class="caret"></b></a>
                             <ul class="dropdown-menu ">
@@ -338,25 +329,54 @@
 
 
 
-
- <div class="section hidden-xs">
-
+<style>
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #myCarousel { display: none; }   /* hide it elsewhere */
+}
+</style>
         <!-- company logos and links -->
-        <br/>
+       
+			<!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-        <div class="container ">
-
-
-                <div class="col-lg-8">
-                <div class="MBS-home">
-                  <div  > <img src="/images/slider/scroll-2.png"></div>
-                  <div><img src="/images/home/70.png"></div>
-                  <div><img src="/images/slider/scroll-2.png"></div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('/images/slider/Polaris.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Polaris</h2>
                 </div>
             </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/images/slider/express.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Express Pick-Up</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('/images/slider/Interiors.png');"></div>
+                <div class="carousel-caption">
+                    <h2>MBS Interiors</h2>
+                </div>
+            </div>
+        </div>
 
-		</div>
-</div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+        
+
 
 <div class="section">
 		<div class="container">
@@ -594,13 +614,68 @@
 
 
         <footer>
+        
         	<div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-3 col-sm-3 col-xs-6">
-                    <p>Copyright &copy; Modern Builders Supply 2014</p>
-                </div>
-            </div>
-            </div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+				  <h4  class="page-header">Contact Us
+				  </h4>
+				  <p>&nbsp;</p>
+				</div>
+				<div class="col-md-6 column ">
+				  <div class="col-lg-12">
+                  
+                  <h4 class="page-header">Connect Socially
+				  </h4>
+				  
+                  <div class="row clearfix">
+                        <div class="col-xs-2 column"><a href="http://www.facebook.com/modernbuilderssupply"><img src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
+                        </div>
+                        <div class="col-xs-2 column"><a href="https://twitter.com/mbs_connect"><img src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
+                        </div>
+                        <div class="col-xs-2 column"><a href="http://www.pinterest.com/mbsinc"><img src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
+                        </div>
+                         <div class="col-xs-2 column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
+                        </div>
+                         <div class="col-xs-2 column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img src="/images/social/Google.png" width="60" height="60" alt=""/></a>
+                        </div>
+                         <div class="col-xs-2 column"><a href="http://www.houzz.com/pro/mbs1944"><img src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
+                        </div>
+                  </div>
+                  
+                  </div>
+                  <br><br>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-4 column  ">
+				  <p class="page-header">something 1
+				  </p>
+				  <p>&nbsp;</p>
+				</div>
+				<div class="col-md-4 column">
+				  <p class="page-header">something 2
+				  </p>
+				  <p>&nbsp;</p>
+				</div>
+				<div class="col-md-4 column">
+				  <p class="page-header">something 3
+				  </p>
+				  <p>&nbsp;</p>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+                <p>Copyright &copy; Modern Builders Supply 2014</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+            
+        	
         </footer>
 
     </div>
@@ -622,19 +697,23 @@
         });
     });
     </script>
-
-    <script type="text/javascript">
-        $('.MBS-home').slick({
-  fade: true,
-  cssEase: 'linear',
-  speed: 300,
-  infinite: true,
-  arrows: true,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000
-});
-                </script>
+    
+    
+<!-- ##############################################################################################
+###                                                                                        ###
+###                        carousel                                                        ###
+###                                                                                        ###
+##############################################################################################
+  -->
+                
+       <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+        
+                
                 
                  <script type="text/javascript">
 
