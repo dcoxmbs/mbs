@@ -46,11 +46,12 @@ padding-top: 70px;
   <!-- InstanceEndEditable -->
 </head>
 
-<body data-spy="scroll" data-target="#myNav">
+<body data-spy="scroll" data-target="#myNav" >
 
-
-<nav class="navbar yamm navbar-inverse navbar-fixed-top " id="myNav" role="navigation" data-spy="affix" data-offset-top="0px">
-  <div class="container">
+	
+    <nav class="navbar yamm navbar-inverse navbar-static-top " id="myNav" role="navigation" data-spy="affix" data-offset-top="20px">
+        <div class="container">
+        	
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -61,7 +62,7 @@ padding-top: 70px;
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
 
 
-                <a class="navbar-brand" href="/index.html">Modern Builders Supply</a>
+                <a class="navbar-brand pull-left" href="/index.html">Modern Builders Supply</a>
             </div>
 
 
@@ -69,22 +70,24 @@ padding-top: 70px;
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="myNav.affix" class="collapse navbar-collapse navbar-ex1-collapse ">
                 <ul class="nav navbar-nav navbar ">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul role="menu" class="dropdown-menu">
+                    <li><a href="/about/about.html" >About </a>
+                        <!--<ul role="menu" >
                             <li><a tabindex="-1" href="/about/about.html">Family of Companies</a>
                             </li>
-                            <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
+                           <!-- <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
                             </li>
                             <li><a tabindex="-1" href="/about/timeline.html">MBS Timeline</a>
                             </li>
                             <li><a tabindex="-1" href="/about/culture.html">MBS Culture</a>
                             </li>
-                        </ul>
+                        </ul>-->
+
                         <li class="dropdown "><a href="#" data-toggle="dropdown" class="dropdown-toggle">Branches<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-12">
+                                        	<img class="img-responsive;"src="/images/home/branch-location.png"  alt=""/>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <p>
@@ -142,7 +145,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>Indiana</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-5 list-unstyled">
                                                         <li><a href="/branches/in/fortwayne.html">Fort Wayne</a>
                                                         </li>
                                                         <li><a href="/branches/in/indianapolis.html">Indianapolis </a>
@@ -193,7 +196,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>West Virginia</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-6 list-unstyled">
                                                         <li><a href="/branches/wv/mineral-wells.html">Mineral Wells</a>
                                                         </li>
                                                         <li>&nbsp;</li>
@@ -207,57 +210,46 @@ padding-top: 70px;
                                 </div>
                             </ul>
                         </li>
-                        <li><a href="/contact.php">Contact</a>
-                        </li>
-                        <li><a href="/services.html">Services</a>
+                        <li><a href="contact.php">Contact</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a tabindex="-1" href="/portfolio-1-col.html">1 Column Portfolio</a>
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>                            <ul role="menu" class="dropdown-menu">
+                            	<!--<li><a tabindex="-1" href="/services/fleet.html">Our Fleet</a>
+                                </li>-->
+                                <li><a tabindex="-1" href="/services/express-pick-up.html">Express Pickup </a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-2-col.html">2 Column Portfolio</a>
+                                <li><a tabindex="-1" href="/services/ready-2-roof.html">Ready-2-Roof</a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-3-col.html">3 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="/portfolio-4-col.html">4 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="/portfolio-item.html">Single Portfolio Item</a>
-                                </li>
-                            </ul>
+                              </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/programs/mbs-programs.html">MBS Programs</a>
-                                </li>
-                                <li><a href="/programs/vendor-programs.html">Vendor Programs</a>
-                                </li>
-                            </ul>
+                        <li >
+                            <a href="/products/solutions.html" >Products </a>
+                         </li>
+                        <li>
+                            <a href="/programs/incentives.html" >Programs </a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogs <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/catalogs/product-flyer.html">Product Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/product-flyer.html">Product Flyers</a>
                                 </li>
-                                <li><a href="/catalogs/tool-flyer.html">Tool Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/tool-flyer.html">Tool Flyers</a>
                                 </li>
-                                <li><a href="blog-post.html">Blog Post</a>
-                                </li>
+                               
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promotions <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/full-width.html">Full Width Page</a>
+                                <li><a href="full-width.html">Full Width Page</a>
                                 </li>
-                                <li><a href="/sidebar.html">Sidebar Page</a>
+                                <li><a href="sidebar.html">Sidebar Page</a>
                                 </li>
-                                <li><a href="/faq.html">FAQ</a>
+                                <li><a href="faq.html">FAQ</a>
                                 </li>
-                                <li><a href="/404.html">404</a>
+                                <li><a href="404.html">404</a>
                                 </li>
-                                <li><a href="/pricing.html">Pricing Table</a>
+                                <li><a href="pricing.html">Pricing Table</a>
                                 </li>
                             </ul>
                         </li>
@@ -265,9 +257,12 @@ padding-top: 70px;
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        
         <!-- /.container -->
     </nav>
     <!-- /nav-->
+
+    <!---          END NAV BAR     -->
 <!-- InstanceBeginEditable name="main content" -->   
 
 
@@ -275,110 +270,169 @@ padding-top: 70px;
       
    
 
-  <div class="container">
+ <div class="container">
 
-      <div class="row">
+    <div class="row">
 
         <div class="col-lg-12">
-          <h1 class="page-header">MBS <small>It's All About Family</small></h1>
-          <ol class="breadcrumb">
-            <li><a href="../index.html">Home</a></li>
-            <li class="active">About</li>
-          </ol>
+            <h1 class="page-header">MBS
+                <small>It's All About Family</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a>
+                </li>
+                <li class="active">About</li>
+            </ol>
         </div>
 
-      </div>
+    </div>
 
-      <div class="row">
+    <div class="row">
 
         <div class="col-md-6">
-          <img class="img-responsive" src="/images/about/MBS-Family-logo.png">
+            <img class="img-responsive" src="/images/about/MBS-Family-logo.png" alt="MBS is a family of companies">
         </div>
         <div class="col-md-6">
-          <h3>The History of Modern Builders Supply, Inc.</h3>
-          <p>Modern Builders Supply, Inc., also known as MBS, was founded in 1944. We have been the leading distributor of building materials in the Midwest for a period that spans nearly 70 years. These 70 years in business has afforded us the opportunity to be creative, to become informed, and to respond to the ever changing, ongoing, always exciting needs of our economic society.<br/>
-<br/>
-Today, MBS has branches in Ohio, Indiana, Michigan, Kentucky, Pennsylvania, and West Virginia.  In all, there are 30 distribution centers across 6 states making MBS the premier distributor in the Midwest.</p>
-<p>MBS is a family owned and operated business and the family lives and works in the heart of the business.  Larry Leggett will be celebrating 50 years June of 2012 with Modern Builders Supply. Larry is Chairman of the Board.  Larry’s oldest son Kevin is the President and CEO; while his youngest son Eric is the Executive Vice-President and COO.  Larry’s daughter Heather works in the Credit Department and daughter-in-law Julie is the VP of Interiors & Design.</p>
-<br/>
+            <h3>The History of Modern Builders Supply, Inc.</h3>
+            <p>Modern Builders Supply, Inc., also known as MBS, was founded in 1944. We have been the leading distributor of building materials in the Midwest for more than 70 years. These past 7 decades in business has afforded us the opportunity to be creative, to become informed, and to respond to the ever changing, ongoing, always exciting needs of our economic society.
+                <br>
+                <br>Today, MBS has branches in Ohio, Indiana, Michigan, Kentucky, Pennsylvania, and West Virginia. In all, there are 30 distribution centers across 6 states making MBS the premier distributor in the Midwest.</p>
+            <p>MBS is a family owned and operated business and the family lives and works in the heart of the business. Larry Leggett has been with Modern Builders Supply for more than 50 years. Mr. Leggett is Chairman of the Board for MBS. Larry’s oldest son Kevin is the President and CEO; while his youngest son Eric is the Executive Vice-President and COO. Larry’s daughter Heather works in the Credit Department and daughter-in-law Julie is the VP of Interiors &amp; Design.</p>
+            <br/>
 
 
 
         </div>
 
-      </div>
-  </div>
+    </div>
+</div>
 
 
 
-      <!-- Team Member Profiles -->
+<!-- Team Member Profiles -->
 
-    <div class="section">
+<div class="section">
     <div class="container">
-      <div class="row">
+        <div class="row">
 
-        <div class="col-lg-12">
-          <h2 class="page-header">Our MBS Family</h2>
-        </div></div>
+            <div class="col-lg-12">
+                <h2 class="page-header">Our MBS Family</h2>
+            </div>
+        </div>
 
-		
-            <div class="row">
-                <div class=" col-md-3 col-sm-3 col-xs-8">
 
-                    <a href="/index.html">
-                        <img class="img-responsive img-home-portfolio" src="/images/home/mbs.png">
-                    </a>
+        <div class="row">
+            <div class=" col-md-3 col-sm-3 col-xs-8">
 
-                    <h3><i class="fa fa-map-marker"></i> MBS Locations</h3>
+                <a href="/index.html">
+                    <img class="img-responsive img-home-portfolio" src="/images/home/mbs.png">
+                </a>
 
-                    <p>Modern Builders Supply has<a href="/index.html" class="roll-link"><span data-title="30 locations"> 30 locations</span></a> in six states throughout the Midwest. MBS distributes name brand roofing, siding, windows and doors, kitchens, decking and so much more.</p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-10">
+                <h3><i class="fa fa-map-marker"></i> MBS Locations</h3>
 
-                    <a href="http://www.mbsinteriors.com" target="_blank">
-                        <img class="img-responsive img-home-portfolio" src="/images/home/interiors.png">
-                    </a>
+                <p>Modern Builders Supply has
+                    <a href="/index.html" class="roll-link">
+                        <span data-title="30 locations">30 locations</span>
+                    </a>in six states throughout the Midwest. MBS distributes name brand roofing, siding, windows and doors, kitchens, decking and so much more.</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-10">
 
-                    <h3><i class="fa fa-home"></i> MBS Interiors</h3>
+                <a href="http://www.mbsinteriors.com" target="_blank">
+                    <img class="img-responsive img-home-portfolio" src="/images/home/interiors.png">
+                </a>
 
-                    <p><a href="http://www.mbsinteriors.com" target="_blank" class="roll-link"><span data-title="MBS Interiors">MBS Interiors</span></a> provides you with a complete design solution from space planning, cabinetry design and appliance selection to flooring options and plumbing collections.</p>
-                </div>
-                <div class=" col-md-3 col-sm-3 col-xs-10">
+                <h3><i class="fa fa-home"></i> MBS Interiors</h3>
 
-                    <a href="http://buymbs.com" target="_blank">
-                        <img class="img-responsive img-home-portfolio" src="/images/home/buymbs.png">
-                    </a>
-                    <h3><i class="fa fa-shopping-cart"></i> BuyMBS.com</h3>
+                <p>
+                    <a href="http://www.mbsinteriors.com" target="_blank" class="roll-link">
+                        <span data-title="MBS Interiors">MBS Interiors</span>
+                    </a>provides you with a complete design solution from space planning, cabinetry design and appliance selection to flooring options and plumbing collections.</p>
+            </div>
+            <div class=" col-md-3 col-sm-3 col-xs-10">
 
-                    <p><a hre="http://buymbs.com" target="_blank" class="roll-link"><span data-title="BuyMBS.com">BuyMBS.com</span></a> is the online store of Modern Builders Supply. Our selection of products to choose from is growing daily. We have the name brand profucts the Professional Builder's use.</p>
-                </div>
-                <div class="col-md-3 col-sm-3 col-xs-10">
+                <a href="http://buymbs.com" target="_blank">
+                    <img class="img-responsive img-home-portfolio" src="/images/home/buymbs.png">
+                </a>
+                <h3><i class="fa fa-shopping-cart"></i> BuyMBS.com</h3>
 
-                    <a href="http://www.polariswindows.com" target="_blank">
-                        <img class="img-responsive img-home-portfolio" src="/images/home/polaris.png">
-                    </a>
+                <p>
+                    <a href="http://buymbs.com" target="_blank" class="roll-link">
+                        <span data-title="BuyMBS.com">BuyMBS.com</span>
+                    </a>is the online store of Modern Builders Supply. Our selection of products to choose from is growing daily. We have the name brand profucts the Professional Builder's use.</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-10">
 
-                    <h3><i class="fa fa-cogs"></i> Polaris</h3>
+                <a href="http://www.polariswindows.com" target="_blank">
+                    <img class="img-responsive img-home-portfolio" src="/images/home/polaris.png">
+                </a>
 
-                    <p><a href="http://www.polariswindows.com" target="_blank" class="roll-link"><span data-title="Polaris Windows & Doors">Polaris Windows & Doors</span></a> has been providing high quality window and door products to the new construction and remodeling industry. We stay on top of industry innovations and offer products at a competitive price with consistent delivery.</p>
-                </div>
+                <h3><i class="fa fa-cogs"></i> Polaris</h3>
+
+                <p>
+                    <a href="http://www.polariswindows.com" target="_blank" class="roll-link">
+                        <span data-title="Polaris Windows & Doors">Polaris Windows & Doors</span>
+                    </a>has been providing high quality window and door products to the new construction and remodeling industry. We stay on top of industry innovations and offer products at a competitive price with consistent delivery.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="container">
+        <div class="row clearfix">
+            <h2 class="page-header">BuyMBS</h2>
+            <div class="col-md-7 column">
+                <p>Not located near one of our Brick and Mortar branch locations? No problem, Modern Builders Supply has a solution for you, <a href="http://buymbs.com" target="_blank">BuyMBS.com.</a> <br/>
+                <br/>Shop anywhere, anytime. We carry the brands you know and trust, the brands professional contractors use. Our online store provides you with a huge selection of products, and we are adding new ones on a daily basis. You can be assured that our easy ordering process is both safe and secure. For your convenience, we offer free shipping on all orders. BuyMBS.com is pleased to serve thousands of customers in the lower 48 states.</p>
             </div>
        
+        <div class="col-md-4 column">
+                <a href="http://buymbs.com" target="_blank"><img class="img-responsive" src="/images/about/buymbs-map.png"  alt="map of BuyMBS customers"/></a>
+                <center><p style=" text-align:center; font-size:smaller;">Map of BuyMBS customers.</p></center>
             </div>
+             </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row clearfix">
+            <h2 class="page-header">MBS Interiors</h2>
+            <div class="col-md-7 column">
+                <p><a href="http://www.mbsinteriors.com" target="_blank">MBS Interiors</a> is proud to offer interior design solutions for contractors of Modern Builders Supply. We provide you with complete and personalized design solutions from space planning, cabinetry design and appliance selection to flooring options and plumbing collections. Our design services and solutions include coordinating of measurements and drawing your floor plan at no charge. </p>
+                <p>MBS Interiors supplies up to six different cabinet brands to fit your diverse wants, needs, budget, and style. For your convenience, we offer a selection of stock cabinets for fast and immediate turn-around. MBS provides easy access to ordering our supporting design products such as flooring, appliances, countertops, and accessories. We see our customer’s orders through with our dependable delivery service.</p>
             </div>
-           
-           
-       <div class="section">
-    	<div class="container">
         
-            <div><p>In addition to being the industry leader in distribution of roofing, siding, kitchens, and so much more, MBS manufactures and markets one of the finest window and door systems offered today. You will see our tractor and trailers going up and down the highways delivering new windows and doors across the country as we proudly display the name of Polaris Windows and Doors. <br/>
-<br/>
-We offer so many styles and colors that the mind can run wild making selections that will offer personal beauty to individualize each and every home.  MBS has been manufacturing window and doors throughout our history and today we are so proud of the Polaris Window and Door System which creates some of the finest, most energy efficient windows and doors available.</p>
-<h5>MBS ON THE MOVE…E-COMMERCE</h5>
-      <p>You are cordially invited to check us out on our eCommerce site to explore all our products that are available over the internet. It’s easy and convenient, allows you to maximize your time-on your schedule. MBS on the move with technology.</p></div>
-      </div>
-      </div>
-    
+        <div class="col-md-4 column">
+               <a href="http://www.mbsinteriors.com" target="_blank"> <img class="img-responsive" src="/images/about/MBS-Interiors.jpg"  alt="MBS Interiors"/></a>
+            </div>
+            </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row clearfix">
+        	<h2 class="page-header">Polaris Windows and Doors</h2>
+            <div class="col-md-7 column">
+            
+                <div>
+                    <p>In addition to being the industry leader in distribution of roofing, siding, kitchens, and so much more, MBS manufactures and markets one of the finest window and door systems offered today. You will see our tractor and trailers going up and down the highways delivering new windows and doors across the country as we proudly display the name of <a href="http://www.polariswindows.com" target="_blank" class="roll-link">
+                        <span data-title="Polaris Windows & Doors">Polaris Windows and Doors.</span></a>
+                        <br/>
+                        <br/>We offer so many styles and colors that the mind can run wild making selections that will offer personal beauty to individualize each and every home. MBS has been manufacturing window and doors throughout our history and today we are so proud of the Polaris Window and Door System which creates some of the finest, most energy efficient windows and doors available.</p>
+                 </div>
+			</div>
+            <div class="col-md-4 column">
+                <a href="http://www.polariswindows.com" target="_blank"><img  class="img-responsive" src="/images/about/Polaris-Windows.png"  alt="Polaris Premium Vinyl Replacement Windows"/></a>
+            </div>
+        </div>
+    </div>
+</div>
 
      
     
@@ -457,9 +511,9 @@ We offer so many styles and colors that the mind can run wild making selections 
     
 
       <!-- Our Customers -->
-<div class="section">
-<div class="container"
-      ><div class="row">
+<!--<div class="section">
+<div class="container">
+      <div class="row">
 
         <div class="col-lg-12">
           <h2 class="page-header">Our Family</h2>
@@ -492,7 +546,7 @@ We offer so many styles and colors that the mind can run wild making selections 
         </div>
 
       </div>
-
+-->
   <!-- <div class="row text-center">
         
         <div class="col-lg-12">
@@ -512,7 +566,7 @@ We offer so many styles and colors that the mind can run wild making selections 
 <!-- /.container -->
   <!-- InstanceEndEditable -->
    
-<div class="section-footer">
+    <div class="section-footer">
     <div class="container">
 
 
@@ -535,17 +589,17 @@ We offer so many styles and colors that the mind can run wild making selections 
 				  </h4>
 				  
                   <div class="row clearfix">
-                        <div class="col-xs-2 column"><a href="http://www.facebook.com/modernbuilderssupply"><img src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.facebook.com/modernbuilderssupply"><img src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="https://twitter.com/mbs_connect"><img src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="https://twitter.com/mbs_connect"><img src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="http://www.pinterest.com/mbsinc"><img src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.pinterest.com/mbsinc"><img src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img src="/images/social/Google.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img src="/images/social/Google.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.houzz.com/pro/mbs1944"><img src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.houzz.com/pro/mbs1944"><img src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
                         </div>
                   </div>
                   
@@ -555,9 +609,63 @@ We offer so many styles and colors that the mind can run wild making selections 
 			</div>
 			<div class="row clearfix">
 				<div class="col-md-4 column  ">
-				  <p class="page-header">something 1
+				  <p class="page-header">Sign Up For News and Promotions
 				  </p>
-				  <p>&nbsp;</p>
+				  
+                            <div id="divNewsletter">
+                                <div style="margin-left: 10px;float:left;padding-right:15px;">
+
+<!-- // Mad Mimi SUBSCRIBE CODE \\ -->
+
+<p style="margin-bottom:8px; font-weight:800; font-size:22px; margin-top:0px; background-color:black; color: white; padding:10px 0px 6px 15px;">Join our Mailing List</p>
+<p style="padding-top:3px; padding-bottom:3px; font-size: 0.95em;">Enter your email address below to get the latest information, promotions and news from Modern Builders Supply.</p>
+
+<form  class="form-horizontal" role="form" action="https://madmimi.com/signups/subscribe/104646" id="mad_mimi_signup_form" method="post" target="_blank">
+
+    <div style="padding-left: 15px;" class="mimi_field required form-group">
+        <div class="" style="display:inline-block;vertical-align:middle">
+            <input style="width: 170px !important; height:30px;font-size:14px; color: #000; padding-left: 10px; " id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="   you@example.com">
+            <input type="submit" class="submit btn btn-sm btn-danger " style="font-size:15px;width:120px;padding:2px; margin-left:15px;" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending…" data-invalid-text="↑ You forgot some required fields" data-choose-list="↑ Choose a list">
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function() {
+            var form = document.getElementById('mad_mimi_signup_form'),
+                submit = document.getElementById('webform_submit_button'),
+                validEmail = /.+@.+\..+/,
+                isValid;
+
+            form.onsubmit = function(event) {
+                validate();
+                if (!isValid) {
+                    revalidateOnChange();
+                    return false;
+                }
+            };
+
+            function validate() {
+                isValid = true;
+                emailValidation();
+                fieldAndListValidation();
+                updateFormAfterValidation();
+            }
+
+            function emailValidation() {
+                var email = document.getElementById('signup_email');
+                if (!validEmail.test(email.value)) {
+                    textFieldError(email);
+                    isValid = false;
+                } else {
+                    removeTextFieldError(email);
+                }
+            }
+            })();
+    </script>
+</form>
+
+
+<!-- \\ END Mad Mimi SUBSCRIBE CODE // -->
+</div></div>
 				</div>
 				<div class="col-md-4 column">
 				  <p class="page-header">something 2
@@ -570,7 +678,8 @@ We offer so many styles and colors that the mind can run wild making selections 
 				  <p>&nbsp;</p>
 				</div>
 			</div>
-			<div class="row clearfix">
+           
+			<div class="row clearfix" style="margin-top: 75px;">
 				<div class="col-md-12 column">
                 <p>Copyright &copy; Modern Builders Supply 2014</p>
 				</div>

@@ -3,21 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+ 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
   <!-- InstanceBeginEditable name="doctitle" -->
   <title>MBS</title>
   <!-- InstanceEndEditable -->
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.css" rel="stylesheet">
+  
 
   <!-- Add custom CSS here -->
+   <script src="/js/html5shiv.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/yamm.css" rel="stylesheet">
+    <link href="/css/sprites.css" rel="stylesheet">
     
-   <link href="/css/modern-business.css" rel="stylesheet">
-  <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/css/yamm.css" rel="stylesheet">
-  <script src="/js/respond.min.js"></script>
-  <!-- InstanceBeginEditable name="head" -->    
+     <!-- JavaScript -->
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/modern-business.js"></script>
+    <script src="/js/jquery.matchHeight.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+     
+     <script type="text/javascript">
+ $.noConflict();   
+jQuery( document ).ready(function() {jQuery('.program-item').matchHeight();});
+   <!-- TemplateBeginEditable name="head" -->   
+   </script>
+    
 
   <style>
     #myNav.affix {
@@ -41,16 +63,95 @@ padding-top: 70px;
 
 }
 
+@media (max-width: 700px) {
+  
+
+    .main-nav {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .main-nav>a {
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width:699px)  {
+	a.navbar-brand {
+  
+  display:none !important;
+  visibility:hidden !important;
+ 
+  
+}
+}
+ 
+ @media (max-width:700px)  {
+	a.navbar-brand {
+  
+  display: block !important;
+  visibility: visible !important;
+   
+}
+
+	.yamm-content {
+		padding:20px 0px;
+		
+	}
+	
+	.dropdown-menu {
+		max-height:none;
+		max-width:none;
+		
+	}
+	
+	.yamm-content strong, b {
+		color:#FFF;
+	}
+} 
+
+ @media (max-width:860px)  {
+	.black-bar h1 {
+  
+  display: none !important;
+  visibility: hidden !important;
+  
+}
+} 
+
+@media  (max-width:1199px) {
+	.black-bar h1 {
+		margin-left:50px !important;
+		}
+}
+
+
+@media (max-width:610px) {
+	#return-to-top {
+		display:none !important;
+        visibility:hidden !important;
+	}
+}
+
+
+
     </style>
 
-  <!-- InstanceEndEditable -->
+ 
+ 
 </head>
 
-<body data-spy="scroll" data-target="#myNav">
+<body data-spy="scroll" data-target="#myNav" >
 
-
-<nav class="navbar yamm navbar-inverse navbar-fixed-top " id="myNav" role="navigation" data-spy="affix" data-offset-top="0px">
-  <div class="container">
+	
+     <nav class=" navbar yamm navbar-inverse navbar-static-top main-nav" id="myNav" role="navigation" data-spy="affix" data-offset-top="20px">
+        <div class="container ">
+        	
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -61,7 +162,7 @@ padding-top: 70px;
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
 
 
-                <a class="navbar-brand" href="/index.html">Modern Builders Supply</a>
+                <a class="navbar-brand pull-left visible-lg  visible-sm " href="index.html">Modern Builders Supply</a>
             </div>
 
 
@@ -69,24 +170,26 @@ padding-top: 70px;
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="myNav.affix" class="collapse navbar-collapse navbar-ex1-collapse ">
                 <ul class="nav navbar-nav navbar ">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul role="menu" class="dropdown-menu">
+                    <li><a href="/about/about.html" >About </a>
+                        <!--<ul role="menu" >
                             <li><a tabindex="-1" href="/about/about.html">Family of Companies</a>
                             </li>
-                            <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
+                           <!-- <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
                             </li>
                             <li><a tabindex="-1" href="/about/timeline.html">MBS Timeline</a>
                             </li>
                             <li><a tabindex="-1" href="/about/culture.html">MBS Culture</a>
                             </li>
-                        </ul>
+                        </ul>-->
+
                         <li class="dropdown "><a href="#" data-toggle="dropdown" class="dropdown-toggle">Branches<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-12">
+                                        	
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6" style="float:left; z-index:100;">
                                                     <p>
                                                         <strong>Ohio</strong>
                                                     </p>
@@ -142,7 +245,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>Indiana</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-5 list-unstyled">
                                                         <li><a href="/branches/in/fortwayne.html">Fort Wayne</a>
                                                         </li>
                                                         <li><a href="/branches/in/indianapolis.html">Indianapolis </a>
@@ -193,7 +296,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>West Virginia</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-6 list-unstyled">
                                                         <li><a href="/branches/wv/mineral-wells.html">Mineral Wells</a>
                                                         </li>
                                                         <li>&nbsp;</li>
@@ -207,67 +310,85 @@ padding-top: 70px;
                                 </div>
                             </ul>
                         </li>
-                        <li><a href="/contact.php">Contact</a>
-                        </li>
-                        <li><a href="/services.html">Services</a>
+                        <li><a href="contact.php">Contact</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a tabindex="-1" href="/portfolio-1-col.html">1 Column Portfolio</a>
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>                            <ul role="menu" class="dropdown-menu">
+                            	<li><a tabindex="-1" href="/services/interiors.html">MBS Interiors</a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-2-col.html">2 Column Portfolio</a>
+                                <li><a tabindex="-1" href="/services/express-pick-up.html">Express Pickup </a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-3-col.html">3 Column Portfolio</a>
+                                <li><a tabindex="-1" href="/services/ready-2-roof.html">Ready-2-Roof</a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-4-col.html">4 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="/portfolio-item.html">Single Portfolio Item</a>
-                                </li>
-                            </ul>
+                              </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/programs/mbs-programs.html">MBS Programs</a>
-                                </li>
-                                <li><a href="/programs/vendor-programs.html">Vendor Programs</a>
-                                </li>
-                            </ul>
+                        <li >
+                            <a href="/products/solutions.html" >Products </a>
+                         </li>
+                        <li>
+                            <a href="/programs/incentives.html" >Programs </a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogs <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/catalogs/product-flyer.html">Product Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/product-flyer.html">Product Flyers</a>
                                 </li>
-                                <li><a href="/catalogs/tool-flyer.html">Tool Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/tool-flyer.html">Tool Flyers</a>
                                 </li>
-                                <li><a href="blog-post.html">Blog Post</a>
-                                </li>
+                               
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <!--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promotions <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/full-width.html">Full Width Page</a>
+                                <li><a href="full-width.html">Full Width Page</a>
                                 </li>
-                                <li><a href="/sidebar.html">Sidebar Page</a>
+                                <li><a href="sidebar.html">Sidebar Page</a>
                                 </li>
-                                <li><a href="/faq.html">FAQ</a>
+                                <li><a href="faq.html">FAQ</a>
                                 </li>
-                                <li><a href="/404.html">404</a>
+                                <li><a href="404.html">404</a>
                                 </li>
-                                <li><a href="/pricing.html">Pricing Table</a>
+                                <li><a href="pricing.html">Pricing Table</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        
         <!-- /.container -->
     </nav>
     <!-- /nav-->
+
+    <!---          END NAV BAR     -->
+
+
+<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+ <script type="text/javascript">
+ 	
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+ 
+ </script>
+
+
+<style>
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #myCarousel { display: none; }   /* hide it elsewhere */
+}
+</style>
 <!-- InstanceBeginEditable name="main content" -->   
 <div class="container">
 
@@ -308,8 +429,9 @@ padding-top: 70px;
       </div>-->
 
 </div>
-<section>
+
 <div class="container">
+
 	<div class="col-md-12 column">
 			<div class="row clearfix">
             	<h1 class="page-header"> Commercial Product Solutions</h1> 
@@ -318,8 +440,8 @@ padding-top: 70px;
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="row clearfix">
-				<div class="col-md-8 column">
-					<img alt="" src="/images/products/ExploadedBuilding-graphic-3-2014.jpg" />
+				<div class="col-md-7 column">
+					<img class="img-responsive" alt="" src="/images/products/ExploadedBuilding-graphic-3-2014.jpg" />
 				</div>
 				<div class="col-md-4 column">
                 
@@ -344,12 +466,12 @@ padding-top: 70px;
 			<p>
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
 			</p>
+            <br/>
 		</div>
 	</div>
     </div>
     
-    </section>
-    <section>
+   
     <div class="container">
     
 	<div class="row clearfix">
@@ -357,18 +479,39 @@ padding-top: 70px;
 			<div class="row clearfix">
             
 				<!--col 1 start-->
-                <div class="col-md-4 column col-xs-6">
+                <div class="col-md-6 column">
                 	<!-- 1 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								New Construction Windows
+								Roof Insulation
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://www.pella.com">Pella </a></li>
-    					<li>	<a target="_blank" href="http://www.jeldwen.com">Jeld-Wen</a></li>
+						<li><a target="_blank" href="http://www.atlasroofing.com/general2.php?section_url=5">Atlas Roofing</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.certainteed.com/">Certainteed</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.genflex.com/products">GenFlex</a>
+                            </li>
+                            <li><a target="_blank" href="http://www2.polyglass.com/US-EN/">Polyglass</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.dow.com/products/market/construction/">Dow</a>
+                            </li>
+                            <li><a target="_blank" href="http://atlaseps.com/">Falcon Foam</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.continentalmaterials.com/products.html">Continental</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.buildgp.com/gypsum-strength">Georgia Pacific</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.hpanels.com/">Hunter</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.rmaxinc.com/">Rmax</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.bpcan.com">BP</a>
+                            </li>
+
 					</ul>
 						</div>
 						
@@ -377,13 +520,31 @@ padding-top: 70px;
                    <!--  2 --> <div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Vinyl Replacement Windows
+								Roofing Accessories
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://polaristechnologies.com">Polaris Windows &amp; Doors</a></li>
+						<li><a target="_blank" href="http://www.dmimetals.com/index.asp">DMI</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.flameengineering.com/products-landing.php">Red Dragon</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.eternabond.com/Professional-Roof-Repair-Products-s/21.htm">Eternabond</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.interwrap.com/roofing/index.html">Inter Wrap</a>
+                            </li>
+                            <li></li>
+                            <li>
+                                <a target="_blank" href=""></a><a target="_blank" href="http://www.marathondrains.com/our-products/drains/">Marathon Roofing Products</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.trufast.com/">TruFast</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.chemlink.com/">ChemLink</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.bak-ag.com/website/en/Produkte.htm">BAK</a>
+                            </li>
+
 
 					</ul>
 						</div>
@@ -393,16 +554,24 @@ padding-top: 70px;
                    <!--  3 --> <div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Wood Replacement Windows
+								Metal Roofing
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://www.trimlinewindows.com">Trimline</a></li>
-                        <li>	<a target="_blank" href="http://www.pella.com">	Pella</a></li>
-                        <li>	<a target="_blank" href="http://www.jeldwen.com">Jeld- Wen</a></li>
-
+						<li><a target="_blank" href="http://www.abcmetalroofing.com/">ABC Roofing</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.metalsales.us.com/commercial/products">Metal Sales</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.decra.com/">Derca</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.mbci.com/">MBCI</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.unioncorrugating.com/">Union</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.duralocroofingsystems.com/category/fort-myers-roofing-services/">Dura Loc</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -412,14 +581,26 @@ padding-top: 70px;
                     <!-- 4 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Masonry Products
+								Slate &amp; Tile
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://usblockwindows.com/">US Block Windows</a></li>
-
+						<li><a href="http://www.inspireroofing.com/brands/inspire" target="_blank">Inspire</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.camaraslate.com/roofing.htm">Camara Slate</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.evergreenslate.com/ROOFERS.ASPX">Evergreen Slate</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.monier.com/our-offer/roofing-tiles.html">Monier Lifetile</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.vermontstructuralslate.com/">Vermont Structural Slate</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.ecostarllc.com/index.aspx">EcoStar</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.davinciroofscapes.com/products.php">DaVinci</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -429,15 +610,20 @@ padding-top: 70px;
                      <!-- 5 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Residential Roofing
+								Built-Up Roofing
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li><a target="_blank" href="http://www.atlasroofing.com/">Atlas</a></li>
-    					<li><a target="_blank" href="http://www.certainteed.com/">Certainteed</a></li>
-
+						<li><a target="_blank" href="http://www.certainteed.com/products/in/index">Certainteed</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.continentalmaterials.com/products.html">Continental</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.msaroof.com/">Mid-States Asphalt</a>
+                            </li>
+                            <li><a target="_blank" href="http://roofing.owenscorning.com/professional/trumbull/">Trumbull</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -447,73 +633,49 @@ padding-top: 70px;
                      <!-- 6 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Commercial Roofing
+								EPDM Rubber Accessories
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li><a target="_blank" href="http://www2.polyglass.com/">Polyglass</a></li>
-                        <li><a target="_blank" href="http://www.roofingproductsint.com/">RPI</a></li>
-                        <li><a target="_blank" href="http://www.certainteed.com/">Certainteed</a></li>
+						<li><a href="http://www.genflex.com/products/epdm" target="_blank">GenFlex</a>
+                            </li>
+                            <li><a target="_blank" href="http://roofingproductsint.com/index.cfm">RPI</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.continentalmaterials.com/products.html">Continental</a>
+                            </li>
 
 					</ul>
 						</div>
 						
 					</div>
                     
-                    <!-- 7 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Metal Roofing &amp; Siding
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-						 <li><a target="_blank" href="http://www.abcmetalroofing.com/">American Building Components</a></li>
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 8 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Ventilation
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-						  <li><a target="_blank" href="http://www.airvent.com/">Air Vent Inc.</a></li>
-                        <li><a target="_blank" href="http://www.lomanco.com/">Lomanco</a></li>
-                        <li><a target="_blank" href="http://www.roofsaver.com">Roof Saver</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
+                   
                     
                     
 					
 				</div>
+                
                 <!--end col 1-->
                 
 				<!--col 2 start-->
-                <!-- 1 --><div class="col-md-4 column col-xs-6">
+                <!-- 1 --><div class="col-md-6 column col-xs-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Entry Doors
+								APP &amp; SBS Modified
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://polaristechnologies.com">Polaris Ultra Entry Steel &amp; Fiberglass</a></li>
-                        <li>	<a target="_blank" href="http://www.therma-tru.com">Therma-Tru</a></li>
-                        <li>	<a target="_blank" href="http://www.pella.com">Pella</a></li>
+						<li><a target="_blank" href="http://www.certainteed.com/products/roofing/low-slope/sbs">Certainteed</a>
+                            </li>
+                            <li><a target="_blank" href="http://www2.polyglass.com/US-EN/products-line.asp?IDLinea=9">Polyglass</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.mfmbp.com/categories.aspx">MFM</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -523,14 +685,34 @@ padding-top: 70px;
                     <!-- 2 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Door Hardware
+								Specialty Metals
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://consumer.schlage.com/products/pages/product-landing.aspx">Schlage Locks</a></li>
-
+						<li><a target="_blank" href="http://bergerbp.com/products_arch_overview.php">Berger</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.amcastle.com/">Castle Metals</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.coppercraft.com/products">CopperCraft</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.cordeck.com/metal-deck-products">CORDECK</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.metalera.com/">Metal Era</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.jm.com/">JM</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.pac-clad.com/">PAC-CLAD</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.firestonemetal.com/products/">Una-Clad</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.husseycopper.com/">HC Hussey Copper</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.newmill.com/products/products_overview.html">New Millennium</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.truform-metal.com/">TruForm</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -540,13 +722,16 @@ padding-top: 70px;
                     <!-- 3 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Storm Doors
+								TPO Membrane
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://www.larsondoors.com">Larson</a></li>
+						 <li><a href="http://www.genflex.com/products/tpo" target="_blank">GenFlex</a>
+                            </li>
+                            <li><a href="http://roofingproductsint.com/" target="_blank">RPI</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -556,16 +741,26 @@ padding-top: 70px;
                     <!-- 4 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Patio Doors
+								Coatings, Cements &amp; Adhesives
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li>	<a target="_blank" href="http://polaristechnologies.com">Polaris Ultimate Patio Door </a></li>
-                        <li>	<a target="_blank" href="http://www.jeldwen.com">Jeld- Wen</a></li>
-                        <li>	<a target="_blank" href="http://www.pella.com">Pella</a></li>
-
+						 <li><a target="_blank" href="http://www.alcm.com/products/">ALCM</a>
+                            </li>
+                            <li><a target="_blank" href="http://us.henry.com/roofing">Henry</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.karnakcorp.com/P_Roof.aspx">Karnak</a>
+                            </li>
+                             <li><a target="_blank" href="http://www.ersystems.com/">ER Systems</a>
+                            </li>
+                             <li><a target="_blank" href="http://www.fbcchem.com/">FBC Chemical Corp.</a>
+                            </li>
+                             <li><a target="_blank" href="http://www.elastikote.com/">Elastikote</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.inlandcoatings.com/products.html">Inland Coatings</a>
+                            </li>
 
 					</ul>
 						</div>
@@ -575,201 +770,79 @@ padding-top: 70px;
                      <!-- 5 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Cabinets
+								Wood Shake
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						<li><a target="_blank" href="http://www.kraftmaid.com">Kraftmaid</a></li>
-                         <li><a target="_blank" href="http://www.merillat.com">Merrillat</a></li>
-                         <li><a target="_blank" href="http://www.starmarkcabinetry.com/">StarMark</a></li>
-                         <li><a target="_blank" href="http://www.sacoindustries.com/home.html">Saco Industries</a></li>
+						<li><a target="_blank" href="http://www.silvercreekcedar.ca/products/">Silver Creek</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.enviroshake.com/products/enviroshake-product-line">EnviroShake</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.davinciroofscapes.com/products.php">DaVinci</a>
+                            </li>
+
+					</ul>
+						</div>
+                        </div>
+                        
+                         <!-- 7 --><div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								Skylights &amp; Hatches
+							</h3>
+						</div>
+						<div class="panel-body">
+							
+                     <ul>
+						 <li><a target="_blank" href="http://www.bilco.com/foundations/store/scresults.asp?nav=5*144*Roof-Hatches---All-Models-Roof-Hatches">Bilco</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.marathondrains.com/our-products/product:hatch/">Marathon Roofing Products</a>
+                            </li>
+                            <li><a target="_blank" href="http://commercial.veluxusa.com/commercial/products/">Velux</a>
+                            </li>
+                            <li><a target="_blank" href="http://www.wascoskylights.com/commercial">WASCO</a>
+                            </li>
 
 					</ul>
 						</div>
 						
 					</div>
                     
-                    <!-- 6 --><div class="panel panel-default">
+                    <!-- 8 --><div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">
-								Appliances
+								Hypalon Membrane
 							</h3>
 						</div>
 						<div class="panel-body">
 							
                      <ul>
-						 <li><a target="_blank" href="http://www.geappliances.com">GE</a></li>
-							<li><a target="_blank" href="http://www.mbsinteriors.com/products/appliances/">MBS Interiors</a>a</li>
+						 <li><a target="_blank" href="http://www.burkeind.com/roofing-pond/hypalon-roof.html">Burkeline Roofing Systems</a>
+                            </li>
 
 					</ul>
 						</div>
 						
 					</div>
-                    
-                    <!-- 7 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Flooring
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-						<li><a target="_blank" href="http://www.mohawkflooring.com">Mohawk</a></li>
-						<li><a target="_blank" href="http://www.mbsinteriors.com/products/flooring/">MBS Interiors</a></li>
-					</ul>
-						</div>
 						
-					</div>
-                    
-				</div>
-                <!--end col 2-->
-                
-                
-				<!--col 3 start-->
-                <div class="col-md-4 column col-xs-6">
-					<!-- 1 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Siding &amp; Exterior
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-						<li><a target="_blank" href="http://www.royalbuildingproducts.com">Royal Building Products</a></li>
-                        <li><a target="_blank" href="http://www.mastic.com">Mastic</a></li>
-                        <li><a target="_blank" href="http://www.exteriabp.com">Exteria Building Products</a></li>
-                        <li><a target="_blank" href="http://www.certainteed.com/">Certainteed</a></li>
-                        <li><a target="_blank" href="http://www.foundrysiding.com">The Foundry</a></li>
-                        <li><a target="_blank" href="http://www.osipro.com">OSI</a></li>
-                        <li><a target="_blank" href="http://www.midamericacomponents.com">Mid-America</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 2 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Shutters
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
 					
-                         <li><a target="_blank" href="http://www.midamericacomponents.com">Mid-America</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
                     
-                    <!-- 3 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Moldings
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-                        <li><a target="_blank" href="http://www.royalmouldings.com/">Royal Mouldings</a></li>
-                        <li><a target="_blank" href="http://fypon.com/">Fypon</a></li>
-                        <li><a target="_blank" href="http://www.flextrim.com/">FlexTrim</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 4 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Gutters &amp; Gutter Protection
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-                        <li><a target="_blank" href="http://gratergutterguard.com">Grater Gutter Guard</a></li>
-                        <li><a target="_blank" href="http://www.leaf-relief.com">Leaf Relief</a></li>
-                        <li><a target="_blank" href="http://www.qualityaluminum.com">Quality Aluminum</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 5 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Outdoor Living Products
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-                        <li><a target="_blank" href="http://www.latitudesdeck.com/">Latitudes Decking</a></li>
-    					<li><a target="_blank" href="http://www.ufpi.com">UFP - Treated Lumber</a></li>
-
-
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 6 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Insulation
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-                        <li><a target="_blank" href="http://building.dow.com/na/en/products/insulation/rigidfoam.htm">Dow</a></li>
-					</ul>
-						</div>
-						
-					</div>
-                    
-                    <!-- 7 --><div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">
-								Skylights &amp; Roofing Accessories
-							</h3>
-						</div>
-						<div class="panel-body">
-							
-                     <ul>
-						<li><a target="_blank" href="http://www.veluxusa.com/">Velux</a></li>
-                        <li><a target="_blank" href="http://www.geocelusa.com">Geocel</a></li>
-                        <li><a target="_blank" href="http://www.mfmbp.com/">MFM</a></li>
-                        <li><a target="_blank" href="http://www.interwrap.com/Titanium/">InterWrap</a></li>
-
-					</ul>
-						</div>
-						
-					</div>
-                    
-				</div>
-                <!--end col 3-->
+                   
                 
                 
 			</div>
+            </div>
+            <br/>
 		</div>
 	</div>
 </div>
-</section>
+
 <!-- /.container -->
   <!-- InstanceEndEditable -->
    
-<div class="section-footer">
+  <div class="section-footer">
     <div class="container">
 
 
@@ -778,7 +851,7 @@ padding-top: 70px;
         
         	<div class="container">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-11 column">
 			<div class="row clearfix">
 				<div class="col-md-6 column">
 				  <h4  class="page-header">Contact Us
@@ -792,46 +865,101 @@ padding-top: 70px;
 				  </h4>
 				  
                   <div class="row clearfix">
-                        <div class="col-xs-2 column"><a href="http://www.facebook.com/modernbuilderssupply"><img src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.facebook.com/modernbuilderssupply"><img class="img-responsive program-item" src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="https://twitter.com/mbs_connect"><img src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="https://twitter.com/mbs_connect"><img class="img-responsive program-item" src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="http://www.pinterest.com/mbsinc"><img src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.pinterest.com/mbsinc"><img class="img-responsive program-item" src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img class="img-responsive program-item" src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img src="/images/social/Google.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img  class="img-responsive program-item" src="/images/social/Google.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.houzz.com/pro/mbs1944"><img src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.houzz.com/pro/mbs1944"><img  class="img-responsive program-item" src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
                         </div>
                   </div>
                   
                   </div>
-                  <br><br>
+                  
 				</div>
 			</div>
 			<div class="row clearfix">
-				<div class="col-md-4 column  ">
-				  <p class="page-header">something 1
+				<div class="col-md-4 column col-sm-6 col-xs-12 ">
+				  <p class="page-header">MBS News and Promotions
 				  </p>
-				  <p>&nbsp;</p>
+				  
+                            <div id="divNewsletter">
+                                <div style="margin-left: 10px;float:left;padding-right:15px;">
+
+<!-- // Mad Mimi SUBSCRIBE CODE \\ -->
+
+<p style="margin-bottom:8px; font-weight:800; font-size:22px; margin-top:0px; background-color:black; color: white; padding:10px 0px 6px 15px;">Join our Mailing List</p>
+<p style="padding-top:3px; padding-bottom:3px; font-size: 0.95em;">Enter your email address below to get the latest information, promotions and news from Modern Builders Supply.</p>
+
+<form  class="form-horizontal" role="form" action="https://madmimi.com/signups/subscribe/104646" id="mad_mimi_signup_form" method="post" target="_blank">
+
+    <div style="padding-left: 15px;" class="mimi_field required form-group">
+        <div class="" style="display:inline-block;vertical-align:middle; width:100%;">
+            <input style="width: 93% !important; height:30px;font-size:14px; color: #000; padding-left: 10px; " id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="   you@example.com">
+            <input type="submit" class="submit btn btn-sm btn-danger " style="font-size:15px;width:95%;padding:2px; margin-top:10px;" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending…" data-invalid-text="↑ You forgot some required fields" data-choose-list="↑ Choose a list">
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function() {
+            var form = document.getElementById('mad_mimi_signup_form'),
+                submit = document.getElementById('webform_submit_button'),
+                validEmail = /.+@.+\..+/,
+                isValid;
+
+            form.onsubmit = function(event) {
+                validate();
+                if (!isValid) {
+                    revalidateOnChange();
+                    return false;
+                }
+            };
+
+            function validate() {
+                isValid = true;
+                emailValidation();
+                fieldAndListValidation();
+                updateFormAfterValidation();
+            }
+
+            function emailValidation() {
+                var email = document.getElementById('signup_email');
+                if (!validEmail.test(email.value)) {
+                    textFieldError(email);
+                    isValid = false;
+                } else {
+                    removeTextFieldError(email);
+                }
+            }
+            })();
+    </script>
+</form>
+
+
+<!-- \\ END Mad Mimi SUBSCRIBE CODE // -->
+</div></div>
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 column col-sm-6 col-xs-12">
 				  <p class="page-header">something 2
 				  </p>
 				  <p>&nbsp;</p>
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 column col-sm-6 col-xs-12">
 				  <p class="page-header">something 3
 				  </p>
 				  <p>&nbsp;</p>
 				</div>
 			</div>
-			<div class="row clearfix">
+           
+			<!--<div class="row clearfix" style="margin-top: 75px;">
 				<div class="col-md-12 column">
                 <p>Copyright &copy; Modern Builders Supply 2014</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 </div>
@@ -841,11 +969,91 @@ padding-top: 70px;
 
     </div>
 </div>
+    <!-- /.container -->
+ 
+    <div style="background-color:#222222; padding: 30px; color:white; text-align:center; font-size:larger;">
+        <div class="row ">
+				<div >
+                <p> &copy; 1944<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Modern Builders Supply, Inc.</p>
+				</div>
+			</div>
+        
+   
+   
+    
 
     <!-- JavaScript -->
-    <script src="../js/jquery-1.10.2.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/modern-business.js"></script>
+   
 
-  </body>
+    <script type="text/javascript">
+    $(function() {
+        $('#myNav').affix({
+            offset: {
+                top: 160
+            }
+        });
+    });
+    </script>
+    
+ <script type="text/javascript">
+    $(function() {
+    $('.program-item').matchHeight();
+});
+    </script>
+    
+
+    
+<!-- ##############################################################################################
+###                                                                                        ###
+###                        carousel                                                        ###
+###                                                                                        ###
+##############################################################################################
+  -->
+                
+       <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+        
+                
+                
+                 <script type="text/javascript">
+
+$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+  // Avoid following the href location when clicking
+  event.preventDefault();
+  // Avoid having the menu to close when clicking
+  event.stopPropagation();
+  // Toggle menu.
+  if ($(this).parent().hasClass('open'))
+    $(this).parent().removeClass('open');
+  else
+    $(this).parent().addClass('open');
+  // If children are open, close them.
+  $(this).children().removeClass('open');
+  // If a sibling menu is already open we close it
+  $(this).parent().siblings().removeClass('open').children().removeClass('open');
+  $(this).siblings().children().removeClass('open');
+  
+  var menu = $(this).parent().find("ul");
+  var menupos = menu.offset();
+  
+  if (menupos.left + menu.width() > $(window).width()) {
+    var newpos = -$(menu).width();
+    menu.css({ left: newpos });
+  } else {
+    var newpos = $(this).parent().width();
+    menu.css({ left: newpos });
+  }
+});
+
+</script>
+
+
+
+</div></body>
+
 <!-- InstanceEnd --></html>

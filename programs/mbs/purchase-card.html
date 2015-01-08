@@ -1,56 +1,195 @@
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/basic.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- InstanceBeginEditable name="doctitle" -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- InstanceBeginEditable name="doctitle" -->
   <title>MBS Purchase Card</title>
-  <!-- InstanceEndEditable -->
-  <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.css" rel="stylesheet">
+  <!-- InstanceEndEditable -->  
 
-  <!-- Add custom CSS here -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
-   <link href="/css/modern-business.css" rel="stylesheet">
-  <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/css/yamm.css" rel="stylesheet">
-  <script src="/js/respond.min.js"></script>
-  <!-- InstanceBeginEditable name="head" -->    
+    
+  
+    <script src="/js/html5shiv.js"></script>
 
-  <style>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/yamm.css" rel="stylesheet">
+    <link href="/css/sprites.css" rel="stylesheet">
+    
+     <!-- JavaScript -->
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/modern-business.js"></script>
+    <script src="/js/jquery.matchHeight.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/js/slick/slick.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+    <style>
+	 
     #myNav.affix {
-        top: 0px;
+        top: 0px !important;
         /* Set the top position of pinned element */
         width: 100%;
-        -webkit-transition: all 3.3s ease;
         margin-bottom: 0px;
     }
     .navbar {
-        -webkit-transition: all 3.3s ease;
-        margin-bottom: 30px;
-        height: 50px !important;
+	margin-bottom: 0px;
+	font-size: medium;
     }
-    .dropdown-menu {
-        position: absolute;
-        top: 50px !important;
+    .black-bar {
+        display: block;
+        background-color: #000000 !important;
+        width: 98%;
+        height:80px;
+        z-index: 100;
+        position: relative;
+        top: 20px;
+        color: white;
+        font-size: 26px;
+        margin-bottom: 50px;
     }
-	    body {
-padding-top: 70px;
-
-}
-
+    .black-bar img {
+	z-index: 10;
+	position: relative;
+	padding-left: 10px;
+	margin-top: -20px;
+	
+    }
+    .black-bar h1 {
+	margin-left: 5px;
+	margin-bottom: 2px;
+	padding-bottom: 10px;
+	bottom: -65px;
+	font-size: 29px;
+	text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.9), 3px 4px 0px rgba(255, 255, 255, 0.7);
+    }
+		
     </style>
-
-  <!-- InstanceEndEditable -->
+   
 </head>
 
-<body data-spy="scroll" data-target="#myNav">
+<body data-spy="scroll" data-target="#myNav" >
 
 
-<nav class="navbar yamm navbar-inverse navbar-fixed-top " id="myNav" role="navigation" data-spy="affix" data-offset-top="0px">
-  <div class="container">
+
+
+    <div class="section-header clearfix ">
+
+        <div class="container black-bar">
+
+            <div class="row clearfix">
+                <div class=" col-md-4 ">
+
+                    <img   src="/images/bg/MBS-bullet.png" alt="MBS"  />
+
+                </div>
+
+                <div class=" col-md-7  col-sm-8 hidden-xs ">
+                    <h1 style="font-weight:800; font-size:3.25vw; letter-spacing: 3px; margin-top:auto; line-height:80px; ">Modern Builders Supply</h1>
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.section -->
+<style>
+	
+
+@media (max-width: 700px) {
+  
+
+    .main-nav {
+        -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .main-nav>a {
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width:699px)  {
+	a.navbar-brand {
+  
+  display:none !important;
+  visibility:hidden !important;
+ 
+  
+}
+}
+ 
+ @media (max-width:700px)  {
+	a.navbar-brand {
+  
+  display: block !important;
+  visibility: visible !important;
+   
+}
+
+	.yamm-content {
+		padding:20px 0px;
+		
+	}
+	
+	.dropdown-menu {
+		max-height:none;
+		max-width:none;
+		
+	}
+	
+	.yamm-content strong, b {
+		color:#FFF;
+	}
+} 
+
+ @media (max-width:860px)  {
+	.black-bar h1 {
+  
+  display: none !important;
+  visibility: hidden !important;
+  
+}
+} 
+
+@media  (max-width:1199px) {
+	.black-bar h1 {
+		margin-left:50px !important;
+		}
+	
+}
+
+@media (max-width:610px) {
+	#return-to-top {
+		display:none !important;
+        visibility:hidden !important;
+	}
+}
+
+</style>
+	
+<nav class=" navbar yamm navbar-inverse navbar-static-top main-nav" id="myNav" role="navigation" data-spy="affix" data-offset-top="20px">
+        <div class="container ">
+        	
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -61,32 +200,33 @@ padding-top: 70px;
                 <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
 
 
-                <a class="navbar-brand" href="/index.html">Modern Builders Supply</a>
+                <a class="navbar-brand pull-left visible-lg  visible-sm " href="../../index.html">Modern Builders Supply</a>
             </div>
-
 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="myNav.affix" class="collapse navbar-collapse navbar-ex1-collapse ">
                 <ul class="nav navbar-nav navbar ">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul role="menu" class="dropdown-menu">
+                    <li><a href="/about/about.html" >About </a>
+                        <!--<ul role="menu" >
                             <li><a tabindex="-1" href="/about/about.html">Family of Companies</a>
                             </li>
-                            <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
+                           <!-- <li><a tabindex="-1" href="/about/career/career.html">Careers</a>
                             </li>
                             <li><a tabindex="-1" href="/about/timeline.html">MBS Timeline</a>
                             </li>
                             <li><a tabindex="-1" href="/about/culture.html">MBS Culture</a>
                             </li>
-                        </ul>
+                        </ul>-->
+
                         <li class="dropdown "><a href="#" data-toggle="dropdown" class="dropdown-toggle">Branches<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <div class="yamm-content">
                                     <div class="row">
                                         <div class="col-sm-12">
+                                        	
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6" style="float:left; z-index:100;">
                                                     <p>
                                                         <strong>Ohio</strong>
                                                     </p>
@@ -142,7 +282,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>Indiana</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-5 list-unstyled">
                                                         <li><a href="/branches/in/fortwayne.html">Fort Wayne</a>
                                                         </li>
                                                         <li><a href="/branches/in/indianapolis.html">Indianapolis </a>
@@ -193,7 +333,7 @@ padding-top: 70px;
                                                     <p>
                                                         <strong>West Virginia</strong>
                                                     </p>
-                                                    <ul class="col-sm-3 list-unstyled">
+                                                    <ul class="col-sm-6 list-unstyled">
                                                         <li><a href="/branches/wv/mineral-wells.html">Mineral Wells</a>
                                                         </li>
                                                         <li>&nbsp;</li>
@@ -207,67 +347,85 @@ padding-top: 70px;
                                 </div>
                             </ul>
                         </li>
-                        <li><a href="/contact.php">Contact</a>
-                        </li>
-                        <li><a href="/services.html">Services</a>
+                        <li><a href="contact.php">Contact</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                            <ul role="menu" class="dropdown-menu">
-                                <li><a tabindex="-1" href="/portfolio-1-col.html">1 Column Portfolio</a>
+                        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>                            <ul role="menu" class="dropdown-menu">
+                            	<li><a tabindex="-1" href="/services/interiors.html">MBS Interiors</a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-2-col.html">2 Column Portfolio</a>
+                                <li><a tabindex="-1" href="/services/express-pick-up.html">Express Pickup </a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-3-col.html">3 Column Portfolio</a>
+                                <li><a tabindex="-1" href="/services/ready-2-roof.html">Ready-2-Roof</a>
                                 </li>
-                                <li><a tabindex="-1" href="/portfolio-4-col.html">4 Column Portfolio</a>
-                                </li>
-                                <li><a tabindex="-1" href="/portfolio-item.html">Single Portfolio Item</a>
-                                </li>
-                            </ul>
+                              </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/programs/mbs-programs.html">MBS Programs</a>
-                                </li>
-                                <li><a href="/programs/vendor-programs.html">Vendor Programs</a>
-                                </li>
-                            </ul>
+                        <li >
+                            <a href="/products/solutions.html" >Products </a>
+                         </li>
+                        <li>
+                            <a href="/programs/incentives.html" >Programs </a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Catalogs <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/catalogs/product-flyer.html">Product Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/product-flyer.html">Product Flyers</a>
                                 </li>
-                                <li><a href="/catalogs/tool-flyer.html">Tool Flyers</a>
+                                <li><a tabindex="-1" href="/catalogs/tool-flyer.html">Tool Flyers</a>
                                 </li>
-                                <li><a href="blog-post.html">Blog Post</a>
-                                </li>
+                               
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <!--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Promotions <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/full-width.html">Full Width Page</a>
+                                <li><a href="full-width.html">Full Width Page</a>
                                 </li>
-                                <li><a href="/sidebar.html">Sidebar Page</a>
+                                <li><a href="sidebar.html">Sidebar Page</a>
                                 </li>
-                                <li><a href="/faq.html">FAQ</a>
+                                <li><a href="faq.html">FAQ</a>
                                 </li>
-                                <li><a href="/404.html">404</a>
+                                <li><a href="404.html">404</a>
                                 </li>
-                                <li><a href="/pricing.html">Pricing Table</a>
+                                <li><a href="pricing.html">Pricing Table</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+        
         <!-- /.container -->
     </nav>
     <!-- /nav-->
+
+    <!---          END NAV BAR     -->
+
+
+<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+ <script type="text/javascript">
+ 	
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+ 
+ </script>
+
+
+<style>
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #myCarousel { display: none; }   /* hide it elsewhere */
+}
+</style>
 <!-- InstanceBeginEditable name="main content" -->   
 <div class="container">
 
@@ -279,7 +437,7 @@ padding-top: 70px;
       <h1 class="page-header">Modern Builders Supply <small>Purchase Card</small></h1>
       <ol class="breadcrumb">
         <li><a href="../../index.html">Home</a></li>
-        <li><a class="roll-link" href="../programs/mbs-programs.html"><span data-title="MBS Programs">MBS Programs</span></a></li>
+        <li><a href="../incentives.html">Programs</a></li>
         <li class="active">MBS Purchase Card</li>
       </ol>
     </div>
@@ -399,7 +557,8 @@ The fine Print...
         
 
   </div>
-     
+    <br>
+    <br> 
 
   <!-- <div class="row text-center">
         
@@ -417,10 +576,10 @@ The fine Print...
 
       </div>-->
 
-</div><!-- /.container -->
+<!-- /.container -->
   <!-- InstanceEndEditable -->
    
-<div class="section-footer">
+  <div class="section-footer">
     <div class="container">
 
 
@@ -429,7 +588,7 @@ The fine Print...
         
         	<div class="container">
 	<div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-11 column">
 			<div class="row clearfix">
 				<div class="col-md-6 column">
 				  <h4  class="page-header">Contact Us
@@ -443,46 +602,101 @@ The fine Print...
 				  </h4>
 				  
                   <div class="row clearfix">
-                        <div class="col-xs-2 column"><a href="http://www.facebook.com/modernbuilderssupply"><img src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.facebook.com/modernbuilderssupply"><img class="img-responsive program-item" src="/images/social/Facebook.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="https://twitter.com/mbs_connect"><img src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="https://twitter.com/mbs_connect"><img class="img-responsive program-item" src="/images/social/Twitter.png" width="60" height="60" alt=""/></a>
                         </div>
-                        <div class="col-xs-2 column"><a href="http://www.pinterest.com/mbsinc"><img src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
+                        <div class="col-xs-2-footer column"><a href="http://www.pinterest.com/mbsinc"><img class="img-responsive program-item" src="/images/social/Pinterest.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.linkedin.com/company/modern-builders-supply"><img class="img-responsive program-item" src="/images/social/LinkedIn.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img src="/images/social/Google.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="https://plus.google.com/+Modernbuilderssupplyinc/posts"><img  class="img-responsive program-item" src="/images/social/Google.png" width="60" height="60" alt=""/></a>
                         </div>
-                         <div class="col-xs-2 column"><a href="http://www.houzz.com/pro/mbs1944"><img src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
+                         <div class="col-xs-2-footer column"><a href="http://www.houzz.com/pro/mbs1944"><img  class="img-responsive program-item" src="/images/social/Houzz.png" width="60" height="60" alt=""/></a>
                         </div>
                   </div>
                   
                   </div>
-                  <br><br>
+                  
 				</div>
 			</div>
 			<div class="row clearfix">
-				<div class="col-md-4 column  ">
-				  <p class="page-header">something 1
+				<div class="col-md-4 column col-sm-6 col-xs-12 ">
+				  <p class="page-header">MBS News and Promotions
 				  </p>
-				  <p>&nbsp;</p>
+				  
+                            <div id="divNewsletter">
+                                <div style="margin-left: 10px;float:left;padding-right:15px;">
+
+<!-- // Mad Mimi SUBSCRIBE CODE \\ -->
+
+<p style="margin-bottom:8px; font-weight:800; font-size:22px; margin-top:0px; background-color:black; color: white; padding:10px 0px 6px 15px;">Join our Mailing List</p>
+<p style="padding-top:3px; padding-bottom:3px; font-size: 0.95em;">Enter your email address below to get the latest information, promotions and news from Modern Builders Supply.</p>
+
+<form  class="form-horizontal" role="form" action="https://madmimi.com/signups/subscribe/104646" id="mad_mimi_signup_form" method="post" target="_blank">
+
+    <div style="padding-left: 15px;" class="mimi_field required form-group">
+        <div class="" style="display:inline-block;vertical-align:middle; width:100%;">
+            <input style="width: 93% !important; height:30px;font-size:14px; color: #000; padding-left: 10px; " id="signup_email" name="signup[email]" type="text" data-required-field="This field is required" placeholder="   you@example.com">
+            <input type="submit" class="submit btn btn-sm btn-danger " style="font-size:15px;width:95%;padding:2px; margin-top:10px;" value="Subscribe" id="webform_submit_button" data-default-text="Subscribe" data-submitting-text="Sending…" data-invalid-text="↑ You forgot some required fields" data-choose-list="↑ Choose a list">
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function() {
+            var form = document.getElementById('mad_mimi_signup_form'),
+                submit = document.getElementById('webform_submit_button'),
+                validEmail = /.+@.+\..+/,
+                isValid;
+
+            form.onsubmit = function(event) {
+                validate();
+                if (!isValid) {
+                    revalidateOnChange();
+                    return false;
+                }
+            };
+
+            function validate() {
+                isValid = true;
+                emailValidation();
+                fieldAndListValidation();
+                updateFormAfterValidation();
+            }
+
+            function emailValidation() {
+                var email = document.getElementById('signup_email');
+                if (!validEmail.test(email.value)) {
+                    textFieldError(email);
+                    isValid = false;
+                } else {
+                    removeTextFieldError(email);
+                }
+            }
+            })();
+    </script>
+</form>
+
+
+<!-- \\ END Mad Mimi SUBSCRIBE CODE // -->
+</div></div>
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 column col-sm-6 col-xs-12">
 				  <p class="page-header">something 2
 				  </p>
 				  <p>&nbsp;</p>
 				</div>
-				<div class="col-md-4 column">
+				<div class="col-md-4 column col-sm-6 col-xs-12">
 				  <p class="page-header">something 3
 				  </p>
 				  <p>&nbsp;</p>
 				</div>
 			</div>
-			<div class="row clearfix">
+           
+			<!--<div class="row clearfix" style="margin-top: 75px;">
 				<div class="col-md-12 column">
                 <p>Copyright &copy; Modern Builders Supply 2014</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 </div>
@@ -492,11 +706,91 @@ The fine Print...
 
     </div>
 </div>
+    <!-- /.container -->
+ 
+    <div style="background-color:#222222; padding: 30px; color:white; text-align:center; font-size:larger;">
+        <div class="row ">
+				<div >
+                <p> &copy; 1944<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Modern Builders Supply, Inc.</p>
+				</div>
+			</div>
+        
+   
+   
+    
 
     <!-- JavaScript -->
-    <script src="../../js/jquery-1.10.2.js"></script>
-    <script src="../../js/bootstrap.js"></script>
-    <script src="../../js/modern-business.js"></script>
+   
 
-  </body>
+    <script type="text/javascript">
+    $(function() {
+        $('#myNav').affix({
+            offset: {
+                top: 160
+            }
+        });
+    });
+    </script>
+    
+ <script type="text/javascript">
+    $(function() {
+    $('.program-item').matchHeight();
+});
+    </script>
+    
+
+    
+<!-- ##############################################################################################
+###                                                                                        ###
+###                        carousel                                                        ###
+###                                                                                        ###
+##############################################################################################
+  -->
+                
+       <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+        
+                
+                
+                 <script type="text/javascript">
+
+$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+  // Avoid following the href location when clicking
+  event.preventDefault();
+  // Avoid having the menu to close when clicking
+  event.stopPropagation();
+  // Toggle menu.
+  if ($(this).parent().hasClass('open'))
+    $(this).parent().removeClass('open');
+  else
+    $(this).parent().addClass('open');
+  // If children are open, close them.
+  $(this).children().removeClass('open');
+  // If a sibling menu is already open we close it
+  $(this).parent().siblings().removeClass('open').children().removeClass('open');
+  $(this).siblings().children().removeClass('open');
+  
+  var menu = $(this).parent().find("ul");
+  var menupos = menu.offset();
+  
+  if (menupos.left + menu.width() > $(window).width()) {
+    var newpos = -$(menu).width();
+    menu.css({ left: newpos });
+  } else {
+    var newpos = $(this).parent().width();
+    menu.css({ left: newpos });
+  }
+});
+
+</script>
+
+
+
+</div></body>
+
 <!-- InstanceEnd --></html>
