@@ -1,0 +1,55 @@
+@media (max-width: 800px) {
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: none;
+  }
+  .tablesaw-stack tbody td,
+  .tablesaw-stack tbody th {
+    clear: left;
+    float: left;
+    width: 100%;
+  }
+  .tablesaw-cell-label {
+    vertical-align: top;
+  }
+  .tablesaw-cell-content {
+    max-width: 67%;
+    display: inline-block;
+  }
+  .tablesaw-stack td:empty,
+  .tablesaw-stack th:empty {
+    display: none;
+  }
+  .table-bordered {
+	  border-style: none !important;
+  }
+  b.tablesaw-cell-label  {
+	  color:#636262 !important;
+  }
+  tr.tablesaw {
+	  border-style:none !important;
+  }
+  .tablesaw-stack tbody tr {
+	border-bottom: 4px solid DimGray;
+}
+}
+
+/* Media query to show as a standard table at 560px (35em x 16px) or wider */
+@media (min-width: 801px) {
+  .tablesaw-stack tr {
+    display: table-row;
+  }
+  /* Show the table header rows */
+  .tablesaw-stack td,
+  .tablesaw-stack th,
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  /* Hide the labels in each cell */
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: none !important;
+  }
+}

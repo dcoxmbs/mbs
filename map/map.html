@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+
+
+
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>MBS Map</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAAbUJXAjaM7rMW_DgaBdrAhSBXj2qp9cc9QkDkf51YbiiVC9JSxTVN23BCljVmAbrzXTJFhK-wRb2CQ"
+      type="text/javascript" content="Modern Builders Supply Inc."></script>
+
+  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2974475-1";
+urchinTracker();
+</script>
+</head>
+
+  <body onload="showMap();" onunload="GUnload()">
+   <script type="text/javascript">
+    //<![CDATA[
+function showMap()
+        {
+if (GBrowserIsCompatible()) 
+          {
+            var map = new GMap2(document.getElementById("map"));
+            map.addControl(new GSmallMapControl());	
+            map.addControl(new GMapTypeControl());
+            map.setCenter(new GLatLng(40.44694705960048, -83.056640625), 6);
+            
+            // Create a base icon for all of our markers that specifies the
+            // shadow, icon dimensions, etc.
+            
+            var baseIcon = new GIcon();
+            baseIcon.shadow = "http://www.google.com/mapfiles/shadow50.png";
+            baseIcon.iconSize = new GSize(20, 34);
+            baseIcon.shadowSize = new GSize(37, 34);
+            baseIcon.iconAnchor = new GPoint(9, 34);
+            baseIcon.infoWindowAnchor = new GPoint(9, 2);
+            baseIcon.infoShadowAnchor = new GPoint(18, 25);
+            
+            var eicon = new GIcon();
+            
+            eicon.image = "http://www.modernbuilderssupply.com/mapdots.gif";
+
+            eicon.iconSize = new GSize(10, 10);
+            eicon.iconAnchor = new GPoint(8, 8);
+            eicon.infoWindowAnchor = new GPoint(8, 8);
+    
+            // Add 10 markers to the map at random locations
+            var bounds = map.getBounds();
+            var southWest = bounds.getSouthWest();
+            var northEast = bounds.getNorthEast();
+            var lngSpan = northEast.lng() - southWest.lng();
+            var latSpan = northEast.lat() - southWest.lat();
+            
+                  
+            
+            function createMarker0(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+    
+                 
+				  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Akron Branch</h2><h4>809 E. Exchange St. <br>Akron, OH 44306 <br>330-376-1031<br> <br><a target='_top' style='text-decoration:none;' href='/branches/oh/akron.html' title='Akron Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+        
+            
+            
+                              
+            
+            function createMarker2(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Brunswick Branch</h2><h4>2948 Nationwide Pkwy <br>Brunswick, OH 44212 <br>330-273-6277<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/brunswick.html' title='Brunswick Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker3(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Norwich Branch</h2><h4>8825 East Pike <br>Norwich, OH 43767 <br>740-435-0878<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/norwich.html' title='Norwich Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+                       
+            
+                              
+            
+            function createMarker4(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Canton Branch</h2><h4>400 Cherry Ave., N.E. <br>Canton, OH 44702 <br>330-453-7674<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/canton.html' title='Canton Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker5(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Chillicothe Branch</h2><h4>49 Enterprise Place Dr. <br>Chillicothe, OH 45601 <br>740-779-3991<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/chillicothe.html' title='Chillicothe Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+                              
+            
+            function createMarker6(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Cleveland Central Branch</h2><h4>3900 Jennings Rd. <br>Cleveland, OH 44109 <br>216-658-4410<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/cleveland.html' title='Cleveland Central Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+                              
+            
+            function createMarker7(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Columbus Branch</h2><h4>3808 E. 5th Ave. <br>Columbus, OH 43219 <br>614-237-3705<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/columbus.html' title='Columbus Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker8(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Dayton Branch</h2><h4>2627 Stanley Ave. <br>Dayton, OH 45404 <br>937-222-2627<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/dayton.html' title='Dayton Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker9(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Defiance Branch</h2><h4>850 Carpenter Rd. <br>Defiance, OH 43512 <br>419-782-2050<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/defiance.html' title='Defiance Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker10(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Erie Branch</h2><h4>5725 Evans Rd. <br>Erie, PA 16509 <br>814-868-4627<br><br> <a target='_top' style='text-decoration:none;' href='/branches/pa/erie.html' title='Erie Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker11(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Fairfield Branch</h2><h4>17 Cinchris Dr. <br>Fairfield, OH 45014 <br>513-870-9119<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/fairfield.html' title='Fairfield Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker12(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Findlay Branch</h2><h4>621 Rockwell Ave. <br>Findlay, OH 45840 <br>419-423-0100<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/fairfield.html' title='Findlay Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker13(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Fort Wayne Branch</h2><h4>1727 W. Coliseum Blvd. <br>Fort Wayne, IN 46808 <br>260-482-8460<br><br> <a target='_top' style='text-decoration:none;' href='/branches/in/fortwayne.html' title='Fort Wayne Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker14(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Florence Branch</h2><h4>6801 Power Line Dr. <br>Florence, KY 41042 <br>859-727-0405<br><br> <a target='_top' style='text-decoration:none;' href='/branches/ky/florence.html' title='Florence Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker15(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Indianapolis Branch</h2><h4>3224 Lafayette Rd. <br>Indianapolis, IN 46222 <br>317-924-1040<br><br> <a target='_top' style='text-decoration:none;' href='/branches/in/indinapolis.html' title='Indianapolis Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker16(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Jackson Branch</h2><h4>2401 Brooklyn Rd. <br>Jackson, MI 49203 <br>517-787-3633<br><br> <a target='_top' style='text-decoration:none;' href='/branches/mi/jackson.html' title='Jackson Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker17(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                   var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Lima Branch</h2><h4>1245 Neubrecht Rd. <br>Lima, OH 45801 <br>419-224-4627<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/lima.html' title='Lima Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker18(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Mansfield Branch</h2><h4>85 Smith Ave. <br>Mansfield, OH 44905 <br>419-526-0002<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/mansfield.html' title='Mansfield Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+                              
+            
+            function createMarker19(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Mentor Branch</h2><h4>6601 Hopkins Rd. <br>Mentor, OH 44060 <br>440-974-2755<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/mentor.html' title='Mentor Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker20(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Mineral Wells Branch</h2><h4>274 Elizabeth Pike<br>Mineral Wells, WV 26150 <br>304-489-1780<br><br> <a target='_top' style='text-decoration:none;' href='/branches/wv/mineral-wells.html' title='Mineral Wells Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker21(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Norwalk Branch</h2><h4>369 Milan Ave. <br>Norwalk, OH 44857 <br>419-660-9890<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/norwalk.html' title='Norwalk Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            function createMarker22(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Pittsburgh Branch</h2><h4>2301 Beaver Ave. <br>Pittsburgh, PA 15233 <br>412-322-4100<br><br> <a target='_top' style='text-decoration:none;' href='/branches/pa/pittsburgh.html' title='Pittsburgh Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+            
+            
+                              
+            
+            
+            
+            
+                              
+            
+            function createMarker23(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Youngstown Branch</h2><h4>302 McClurg Rd. <br>Youngstown, OH 44512 <br>330-729-2690<br><br> <a target='_top' style='text-decoration:none;'href='/branches/oh/youngstown.html' title='Youngstown Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+
+            
+            
+                              
+            
+            function createMarker24(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Toledo Branch</h2><h4>3500 Phillips Ave.<br>Toledo, OH 43608 <br>419-241-3961<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/toledo.html' title='Toledo Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+				  function createMarker25(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Ypsilanti Branch</h2><h4>3835 Morgan Rd.<br>Ypsilanti, MI 48197<br>734-547-3533<br><br> <a target='_top' style='text-decoration:none;' href='/branches/mi/ypsilanti.html' title='Ypsilanti Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+            
+                    function createMarker26(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Muncie Branch</h2><h4>3111 East Jackson St.<br>Muncie, IN 47303<br>765-288-4758<br><br> <a target='_top' style='text-decoration:none;' href='/branches/in/muncie.html' title='Muncie Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+				
+				 function createMarker27(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Lansing Branch</h2><h4>6121 Aurelius Road<br>Lansing, MI 48911<br>(517) 394-7721<br><br> <a target='_top' style='text-decoration:none;' href='/branches/mi/lansing.html' title='Lansing Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+				
+				 function createMarker28(point, index) {
+                  // Create a lettered icon for this point using our icon class
+                  var icon = new GIcon(eicon);
+                  var marker = new GMarker(point, icon);
+                
+                  GEvent.addListener(marker, "click", function() {
+                    marker.openInfoWindowHtml("<h2>MBS Cincinnati Branch</h2><h4>5145 Fischer Place<br>St. Bernard, OH 45217<br>(513) 531-1000<br><br> <a target='_top' style='text-decoration:none;' href='/branches/oh/cincinnati.html' title='Cincinnati Branch'><b>Visit Our Branch Page</b></a> <br></h4>");
+                  });
+                  return marker;
+                }
+                                         
+                     
+                              
+            var point = new GLatLng(41.071111, -81.494418);
+            map.addOverlay(createMarker0(point, 0));
+			
+                              
+
+                              
+            var point = new GLatLng(41.244435, -81.792312);
+            map.addOverlay(createMarker2(point, 2));
+                              
+            var point = new GLatLng(40.0154, -81.582503);
+            map.addOverlay(createMarker3(point, 3));
+                              
+            var point = new GLatLng(40.799852, -81.370375);
+            map.addOverlay(createMarker4(point, 4));
+                              
+            var point = new GLatLng(39.352431, -82.972684);
+            map.addOverlay(createMarker5(point, 5));
+                              
+            var point = new GLatLng(41.45135, -81.688426);
+            map.addOverlay(createMarker6(point, 6));
+                              
+            var point = new GLatLng(39.985457, -82.90301);
+            map.addOverlay(createMarker7(point, 7));
+                              
+            var point = new GLatLng(39.784486, -84.167297);
+            map.addOverlay(createMarker8(point, 8));
+                              
+            var point = new GLatLng(41.421898, -84.341669);
+            map.addOverlay(createMarker9(point, 9));
+                              
+            var point = new GLatLng(42.082063, -80.05394);
+            map.addOverlay(createMarker10(point, 10));
+                              
+            var point = new GLatLng(39.335468, -84.504544);
+            map.addOverlay(createMarker11(point, 11));
+                              
+            var point = new GLatLng(41.060719, -83.660133);
+            map.addOverlay(createMarker12(point, 12));
+                              
+            var point = new GLatLng(41.117756, -85.164871);
+            map.addOverlay(createMarker13(point, 13));
+                              
+            var point = new GLatLng(38.981484, -84.599092);
+            map.addOverlay(createMarker14(point, 14));
+                              
+            var point = new GLatLng(39.814848943348295, -86.22377157211304);
+            map.addOverlay(createMarker15(point, 15));
+                              
+            var point = new GLatLng(42.214434, -84.375007);
+            map.addOverlay(createMarker16(point, 16));
+                              
+            var point = new GLatLng(40.757427, -84.079999);
+            map.addOverlay(createMarker17(point, 17));
+                              
+            var point = new GLatLng(40.760527, -82.493945);
+            map.addOverlay(createMarker18(point, 18));
+                              
+            var point = new GLatLng(41.691003, -81.323364);
+            map.addOverlay(createMarker19(point, 19));
+                              
+            var point = new GLatLng(39.19493, -81.53114);
+            map.addOverlay(createMarker20(point, 20));
+                              
+            var point = new GLatLng(41.274757, -82.608405);
+            map.addOverlay(createMarker21(point, 21));
+                              
+            var point = new GLatLng(40.46165827335198, -80.03183841705322);
+            map.addOverlay(createMarker22(point, 22));
+                              
+                              
+            var point = new GLatLng(41.685788, -83.550923);
+            map.addOverlay(createMarker24(point, 23));
+                              
+            var point = new GLatLng(40.995305, -80.652563);
+            map.addOverlay(createMarker23(point, 24));
+                              
+              var point = new GLatLng(42.21595, -83.68438);
+            map.addOverlay(createMarker25(point, 25));
+			
+			var point = new GLatLng(40.19276, -85.38395);
+            map.addOverlay(createMarker26(point, 26));
+			
+			var point = new GLatLng(42.7325, -84.5556);// Lansing
+            map.addOverlay(createMarker27(point, 27));
+			
+			var point = new GLatLng(39.1619, -84.4569);// Cincinnati
+            map.addOverlay(createMarker28(point, 28)); 
+            
+          }
+        }
+    //]]>
+    </script>
+
+<div id="map" style="width: 1000px; height: 350px"></div></body></html>

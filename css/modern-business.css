@@ -696,3 +696,50 @@ h3 i{color: #444;}
 .section-header {
 		padding:0px !important;
 	}
+	
+.bigger-text {
+	font-size: x-large;
+	}
+	
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+@media (max-width:600px)  {
+	.swap {
+ 		display:none !important;
+  		visibility:hidden !important;
+		
+}
+}
+
+@media (min-width:601px) {
+	.swap1 {
+		display:none !important;
+  		visibility:hidden !important;
+		
+}	
+}

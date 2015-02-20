@@ -40,10 +40,40 @@ $email_content = "Name: $name\n";
 $email_content .= "Email Address: $email_address\n";
 $email_content .= "Phone Number: $phone\n";
 $email_content .= "Message:\n\n$message";
+
+
+
+//Added by T-Diddy 1-20-2014
+    $servername = "localhost";
+    $username = "marketing";
+    $password = "cake4ever";
+
+    // Create connection
+    $conn = new mysqli( $servername, $username, $password, 'marketing' );
+    // Check connection
+    if ( $conn->connect_error ) {
+        //echo "in here!";
+        header('Location: contact.php?e='.urlencode($conn->connect_error)); exit;
+    }
+
+    $sql = "INSERT INTO contact_submissions (`submission_name`,`submission_email`,`submission_phone`,`submission_message`,`submission_date`) VALUES 
+            (   '" . mysql_escape_string($name)."',
+                '" . mysql_escape_string($email_address)."',
+                '" . mysql_escape_string($phone)."',
+                '" . mysql_escape_string($message)."',NOW());";
+
+    //echo $sql;
+    $result = $conn->query( $sql );
+
+    $conn->close();
+    
+//End Trevor Add------------
+
+
 	
 // send the email
 //ENTER YOUR INFORMATION BELOW FOR THE FORM TO WORK!
-mail ('YOUR-EMAIL-ADDRESS@YOUR-DOMAIN.com', 'YOUR WEBSITE NAME - Contact Form Submission', $email_content, $headers);
+mail ('dcox@modernbuilderssupply.com', 'MBS - Contact Form Submission', $email_content, $headers);
 	
 // send the user back to the form
 header('Location: contact.html?s='.urlencode('Thank you for your message.')); exit;
